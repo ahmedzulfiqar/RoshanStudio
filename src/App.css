@@ -85,7 +85,16 @@ i {
   background-color: #8b2ff5 !important;
   box-shadow: 0px 0px 5px #8b2ff5;
 }
-
+.btn-primarys {
+  transition: all 0.6s ease;
+  background-color: var(--primary) !important;
+  cursor: pointer;
+}
+.btn-primarys:hover {
+  transition: all 0.6s ease;
+  background-color: #000 !important;
+  box-shadow: 0px 0px 5px #8b2ff5;
+}
 .overlaygradient {
   position: absolute;
   width: 100vw;
@@ -126,7 +135,7 @@ i {
 @media only screen and (max-width: 600px) {
   .arrow {
     margin-top: -4vw;
-  margin-left: 10px;
-  padding: 1.5vw;
+    margin-left: 10px;
+    padding: 1.5vw;
   }
 }

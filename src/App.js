@@ -10,7 +10,7 @@ function App() {
         <div
           className="absoluer position-absolute"
           style={{ top: "3100px" }}
-        >a</div>
+        ></div>
       </div>
     </div>
   );

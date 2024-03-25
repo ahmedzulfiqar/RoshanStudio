@@ -1,6 +1,9 @@
 import React from "react";
 import HomeSection2 from "../../components2/home/HomeSection2";
 import HomeSection3 from "../../components2/home/HomeSection3";
+import HomeSection4 from "../../components2/home/HomeSection4";
+import HomeSection5 from "../../components2/home/HomeSection5";
+import HomeSection6 from "../../components2/home/HomeSection6";
 
 function Home() {
   return (
@@ -43,6 +46,9 @@ function Home() {
       </div>
       <HomeSection2 />
       <HomeSection3 />
+      <HomeSection4 />
+      <HomeSection5 />
+      <HomeSection6  />
     </>
   );
 }
