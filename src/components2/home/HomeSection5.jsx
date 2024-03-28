@@ -13,12 +13,12 @@ const HomeSection5 = () => {
     },
     {
       imgs: "https://www.venturevideos.com/hubfs/Billy%20thumbnails/BDO%20-%20Lets%20talk%20about%20race%20%280-00-02-17%29.webp",
-      heading: "Explainer Video",
+      heading: "Promotional Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
     },
     {
       imgs: "https://www.venturevideos.com/hubfs/Optimised%20website%20images/albert%20optimised.webp",
-      heading: "Explainer Video",
+      heading: "Animated Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
     },
     {
@@ -28,12 +28,12 @@ const HomeSection5 = () => {
     },
     {
       imgs: "https://www.venturevideos.com/hubfs/Billy%20thumbnails/BDO%20-%20Lets%20talk%20about%20race%20%280-00-02-17%29.webp",
-      heading: "Explainer Video",
+      heading: "Promotional Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
     },
     {
       imgs: "https://www.venturevideos.com/hubfs/Optimised%20website%20images/albert%20optimised.webp",
-      heading: "Explainer Video",
+      heading: "Animated Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
     },
   ];
@@ -114,7 +114,7 @@ const HomeSection5 = () => {
                             className="img-fluid  rounded-4 w-100"
                             style={{ height: "22vh" }}
                           />
-                          <h3 className="pt-lg-4 pt-3 ">{i.heading}</h3>
+                          <h3 className="pt-lg-4 pt-3 anton ">{i.heading}</h3>
                           <p className="pt-0">{i.text}</p>
                         </div>
                       </div>

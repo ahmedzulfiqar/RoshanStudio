@@ -21,7 +21,7 @@ a {
 }
 
 i {
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 :root {
@@ -76,22 +76,22 @@ i {
 }
 
 .btn-main {
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
   background-color: var(--main) !important;
   cursor: pointer;
 }
 .btn-main:hover {
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
   background-color: #8b2ff5 !important;
   box-shadow: 0px 0px 5px #8b2ff5;
 }
 .btn-primarys {
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
   background-color: var(--primary) !important;
   cursor: pointer;
 }
 .btn-primarys:hover {
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
   background-color: #000 !important;
   box-shadow: 0px 0px 5px #8b2ff5;
 }
@@ -130,7 +130,7 @@ i {
   width: 500px;
 }
 .navbarer {
-  transition: all 0.3s ease !important;
+  transition: all 0.2s ease !important;
 }
 @media only screen and (max-width: 600px) {
   .arrow {
@@ -138,4 +138,10 @@ i {
     margin-left: 10px;
     padding: 1.5vw;
   }
+}
+::-webkit-scrollbar {
+  display: none !important;
+}
+.pointer {
+  cursor: pointer !important;
 }
