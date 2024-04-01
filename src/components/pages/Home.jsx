@@ -5,6 +5,10 @@ import HomeSection4 from "../../components2/home/HomeSection4";
 import HomeSection5 from "../../components2/home/HomeSection5";
 import HomeSection6 from "../../components2/home/HomeSection6";
 import HomeSection7 from "../../components2/home/HomeSection7";
+import HomeSection8 from "../../components2/home/HomeSection8";
+import HomeSection9 from "../../components2/home/HomeSection9";
+import HomeSection10 from "../../components2/home/HomeSection10";
+import HomeSection11 from "../../components2/home/HomeSection11";
 
 function Home() {
   return (
@@ -51,6 +55,10 @@ function Home() {
       <HomeSection5 />
       <HomeSection6 />
       <HomeSection7 />
+      <HomeSection8 />
+      <HomeSection9 />
+      <HomeSection10 />
+      <HomeSection11 />
     </>
   );
 }

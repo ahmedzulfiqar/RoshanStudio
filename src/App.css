@@ -132,6 +132,15 @@ i {
 .navbarer {
   transition: all 0.2s ease !important;
 }
+.bg-translucent {
+  background-color: #a464ee;
+}
+.gray-background {
+  background-color: #ccc; /* Gray background color */
+  border-radius: 50%; /* Rounded shape */
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 600px) {
   .arrow {
     margin-top: -4vw;
@@ -144,4 +153,7 @@ i {
 }
 .pointer {
   cursor: pointer !important;
+}
+.pointerer {
+  pointer-events: none !important;
 }

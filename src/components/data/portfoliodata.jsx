@@ -25,6 +25,24 @@ import img24 from "../media/yt/maxresdefault (6).jpg";
 import img25 from "../media/yt/maxresdefault (7).jpg";
 import img26 from "../media/yt/maxresdefault (8).jpg";
 import img27 from "../media/yt/maxresdefault (9).jpg";
+import img28 from "../media/vlogs/maxresdefault (2).jpg";
+import img29 from "../media/vlogs/maxresdefault (3).jpg";
+import img30 from "../media/vlogs/maxresdefault.jpg";
+import img31 from "../media/vlogs/maxresdefault (4).jpg";
+import img32 from "../media/vlogs/maxresdefault (1).jpg";
+import img33 from "../media/vlogs/maxresdefault (5).jpg";
+import img34 from "../media/vlogs/maxresdefault (6).jpg";
+import img35 from "../media/vlogs/maxresdefault (7).jpg";
+import img36 from "../media/vlogs/maxresdefault (8).jpg";
+import img37 from "../media/vlogs/maxresdefault (9).jpg";
+import img38 from "../media/vlogs/maxresdefault (10).jpg";
+import img39 from "../media/vlogs/maxresdefault (11).jpg";
+import img40 from "../media/reel/maxresdefault.jpg";
+import img41 from "../media/reel/maxresdefault (1).jpg";
+import img42 from "../media/reel/maxresdefault (2).jpg";
+import img43 from "../media/reel/maxresdefault (3).jpg";
+import img44 from "../media/reel/maxresdefault (4).jpg";
+import img45 from "../media/reel/maxresdefault (5).jpg";
 const portfoliodata = [
   {
     name: "Real Estate",
@@ -176,6 +194,108 @@ const portfoliodata = [
         link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
         thumbnail: img27,
         name: "Twenty-first Video",
+      },
+    ],
+  },
+  {
+    name: "Vlogs",
+    path: "Vlogs",
+    videos: [
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img28,
+        name: "Twenty-second Video",
+      },
+      {
+        link: "/static/media/pexels-pk-g-6924608 (1080p).54f9eaa62aef765d5f2a.mp4",
+        thumbnail: img29,
+        name: "Twenty-third Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img30,
+        name: "Twenty-fourth Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img31,
+        name: "Twenty-fifth Video",
+      },
+      {
+        link: "/static/media/pexels-pk-g-6924608 (1080p).54f9eaa62aef765d5f2a.mp4",
+        thumbnail: img32,
+        name: "Twenty-sixth Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img33,
+        name: "Twenty-seventh Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img34,
+        name: "Twenty-eighth Video",
+      },
+      {
+        link: "/static/media/pexels-pk-g-6924608 (1080p).54f9eaa62aef765d5f2a.mp4",
+        thumbnail: img35,
+        name: "Twenty-ninth Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img36,
+        name: "Thirtieth Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img37,
+        name: "Thirty-first Video",
+      },
+      {
+        link: "/static/media/pexels-pk-g-6924608 (1080p).54f9eaa62aef765d5f2a.mp4",
+        thumbnail: img38,
+        name: "Thirty-second Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img39,
+        name: "Thirty-third Video",
+      },
+    ],
+  },
+  {
+    name: "Reels",
+    path: "Reels",
+    videos: [
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img40,
+        name: "Twenty-second Video",
+      },
+      {
+        link: "/static/media/pexels-pk-g-6924608 (1080p).54f9eaa62aef765d5f2a.mp4",
+        thumbnail: img41,
+        name: "Twenty-third Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img42,
+        name: "Twenty-fourth Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img43,
+        name: "Twenty-fifth Video",
+      },
+      {
+        link: "/static/media/pexels-pk-g-6924608 (1080p).54f9eaa62aef765d5f2a.mp4",
+        thumbnail: img44,
+        name: "Twenty-sixth Video",
+      },
+      {
+        link: "https://youtu.be/z5HqAK3t4yI?si=NI3m8vZpqqflW28k",
+        thumbnail: img45,
+        name: "Twenty-seventh Video",
       },
     ],
   },

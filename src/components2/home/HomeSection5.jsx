@@ -44,8 +44,8 @@ const HomeSection5 = () => {
         className="bg-new border d-flex align-items-center position-relative pe-2"
         style={{ minHeight: "75vh" }}
       >
-        <div class="container px-0 ps-lg-0 ps-2 py-5">
-          <div className="row m-0 justify-content-between">
+        <div class="container  px-0 ps-lg-0 ps-2 py-5">
+          <div className="row m-0 justify-content-between ">
             <div className=" col-md-8 col-12 text-start d-md-block d-none  align-self-center ps-md-0">
               <div className="display-3 anton text-primarys text-uppercase pb-lg-4 pb-2 ">
                 our

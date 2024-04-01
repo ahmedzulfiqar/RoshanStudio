@@ -8,7 +8,7 @@ const HomeSection6 = () => {
         style={{ minHeight: "75h" }}
       >
         <div class="container px-0 ps-lg-0 ps-2">
-          <div className="row m-0 justify-content-between">
+          <div className="row m-0 justify-content-between  mt-md-0 mt-3">
             <div className="col-lg-6 col-12 text-start d-md-block d-none align-self-center">
               <div className="display-3 anton text-light text-uppercase pb-lg-4 pb-2">
                 Our <span className="text-primarys">Values</span>
