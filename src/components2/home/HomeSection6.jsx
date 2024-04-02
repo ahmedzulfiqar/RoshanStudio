@@ -72,8 +72,8 @@ const HomeSection6 = () => {
               </div>
             </div>{" "}
             <div className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block">
-              <div className="display-3 anton text-light pb-lg-4 pb-3  text-uppercase">
-                Our <span className="text-dark">Values</span>
+              <div className="display-2 anton text-light pb-lg-4 pb-3  text-uppercase">
+                Our <span className="text-primarys">Values</span>
               </div>
               <p className="fs-6 small text-light pb-4">
                 At our video editing agency, we breathe life into your stories.

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { animate, motion, stagger } from "framer-motion";
+import { Link } from "react-router-dom";
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setopen] = useState(false);
@@ -50,8 +51,13 @@ function Header() {
             </div>
             <motion.div className="col-8 d-lg-flex d-none justify-content-between align-items-center">
               <div className="d-flex text-start w-100 justify-content-end   text-uppercase text-  anton">
-                <div className="fs-3 px-xxl-3 px-1 align-self-center">Home</div>
-                <div className="fs-3 px-xxl-3 px-1  align-self-center">Our Work</div>
+                <div className="fs-3 px-xxl-3 px-1 align-self-center">
+                  <Link to="/home">Home</Link>
+                </div>
+                <div className="fs-3 px-xxl-3 px-1  align-self-center">
+                  {" "}
+                  <Link to="/portfolio"> Our Work</Link>
+                </div>
                 <div className="fs-3 px-xxl-3 px-1   align-self-center ">
                   {" "}
                   Services

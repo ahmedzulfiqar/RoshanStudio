@@ -5,11 +5,11 @@ const HomeSection8 = () => {
     <>
       <div
         className="bg-main border d-flex align-items-center position-relative pe-2"
-        style={{ minHeight: "55vh" }}
+        style={{ minHeight: "66vh" }}
       >
         <div class="container px-0 ps-lg-0 ps-2 py-5">
           <div className="row m-0 justify-content-between">
-            <div className=" col-md-8 col-12 text-start d-md-block d-none  align-self-center ps-md-0">
+            <div className=" col-md-10 col-12 text-start d-md-block d-none  align-self-center ps-md-0">
               <div className="display-3 anton text-light text-uppercase pb-lg-4 pb-2 ">
                 why to chose
                 <span className="text-dark"> roshan studio</span>
@@ -34,34 +34,34 @@ const HomeSection8 = () => {
               </p>
             </div>{" "}
           </div>
-          <div className="row justify-content-between mt-4 ms-2">
-            <div className="row justify-content-center pt-2">
-              <div className="col-md-6 col-lg-3 col-12  text-center">
-                <div className="rounded-lg rounded bg-translucent my-2   text-center p-5">
+          <div className="row justify-content-between mt-4 m-0 ">
+            <div className="row justify-content-center pt-2 m-0">
+              <div className="col-md-6 col-lg-3 col-6 text-center">
+                <div className="rounded-lg rounded bg-translucent my-2   text-center p-md-5 py-4 px-3">
                   <div className="card-body">
                     <h1 className="text-danger display-5 fw-bold">900+</h1>
                     <h5 className="text-light ">Quality Checks</h5>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-3 col-12  text-center">
-                <div className="rounded-lg rounded bg-translucent my-2  text-center p-5">
+              <div className="col-md-6 col-lg-3 col-6 text-center">
+                <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                   <div className="card-body">
                     <h1 className="display-5 text-primary fw-bold">15+</h1>
                     <h5 className="text-light">Happy Clients</h5>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-3 col-12  text-center">
-                <div className="rounded-lg rounded bg-translucent my-2  text-center p-5">
+              <div className="col-md-6 col-lg-3 col-6  text-center">
+                <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                   <div className="card-body">
                     <h1 className="display-5 text-dark fw-bold">350+</h1>
                     <h5 className="text-light">Projects Completed</h5>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-3 col-12  text-center">
-                <div className="rounded-lg rounded bg-translucent my-2  text-center p-5">
+              <div className="col-md-6 col-lg-3 col-6 text-center">
+                <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                   <div className="card-body">
                     <h1 className="display-5 fw-bold text-info">100+</h1>
                     <h5 className="text-light">Team Members</h5>

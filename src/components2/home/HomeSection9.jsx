@@ -4,10 +4,10 @@ const HomeSection9 = () => {
   return (
     <>
       <div
-        className="border d-flex align-items-center position-relative pe-2"
-        style={{ minHeight: "65vh" }}
+        className="border d-flex align-items-center position-relative "
+        style={{ minHeight: "75vh" }}
       >
-        <div class="container px-0 ps-lg-0 ps-2 py-5 mt-md-3 mt-0">
+        <div class="container py-5 mt-md-3 mt-0">
           <div className="row m-0 justify-content-center">
             <div className=" col-md-8 col-12 text-center d-md-block d-none  align-self-center ps-md-0">
               <div className="display-3 anton text-dark text-uppercase pb-lg-4 pb-2 ">
@@ -30,7 +30,7 @@ const HomeSection9 = () => {
               </p>
             </div>{" "}
           </div>
-          <div className="row justify-content-between mt-md-4 ms-1 mt-2 text-center">
+          <div className="row justify-content-center mt-md-4 mt-2 mx-0 text-center">
             <div className="row justify-content-center pt-2">
               <div className="col-md-6 col-lg-4 col-12 text-center">
                 <div className="rounded-lg rounded bg-new my-2  text-center p-5">

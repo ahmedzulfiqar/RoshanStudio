@@ -13,6 +13,11 @@ a {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
+  color: inherit !important;
+}
+li {
+  text-decoration: none;
+  list-style: none;
 }
 *:focus,
 *:active {

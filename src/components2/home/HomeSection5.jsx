@@ -111,10 +111,10 @@ const HomeSection5 = () => {
                         <div className="col-12 p-0 ">
                           <img
                             src={i.imgs}
-                            className="img-fluid  rounded-4 w-100"
+                            className="img-fluid  rounded-2 w-100"
                             style={{ height: "22vh" }}
                           />
-                          <h3 className="pt-lg-4 pt-3 anton ">{i.heading}</h3>
+                          <h3 className="pt-lg-4 pt-4 anton ">{i.heading}</h3>
                           <p className="pt-0">{i.text}</p>
                         </div>
                       </div>

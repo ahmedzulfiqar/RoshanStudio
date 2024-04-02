@@ -54,8 +54,8 @@ const HomeSection2 = () => {
                   },
                 }}
               >
-                {OBJ_LOGOS.map((i) => {
-                  return (
+                  {OBJ_LOGOS.map((i) => {
+                    return (
                     <SwiperSlide>
                       <img src={i.imgs} alt="" className="img-fluid" />
                     </SwiperSlide>

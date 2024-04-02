@@ -48,18 +48,29 @@ const HomeSection7 = () => {
   return (
     <>
       <div
-        className="bg-white border d-flex align-items-center position-relative overflow-hidden"
+        className="bg-white  d-flex align-items-center position-relative overflow-hidden"
         style={{ minHeight: "75vh" }}
       >
-        <div class="container px-0 ps-lg-0 mt-md-5">
-          <div className="row m-0 mt-md-5 justify-content-center ">
-            <div className="col-lg-11 col-12 text-center align-self-center mt-5">
+        <div class="container px-0 ps-lg-0 my-md-5">
+          <div className="row m-0 my-md-5 justify-content-center ">
+            <div className="col-lg-11 col-12 text-center align-self-center mt-5 d-md-block d-none">
               <div className="display-4 anton text-primarys text-uppercase pb-lg-3 pb-2">
                 <span className="text-main">Portfolio</span>
               </div>
               <p className="display-5 text-uppercase  fw-bolder text-primarys pb-2">
                 Seeing is Believing:
                 <br />
+                <span className="text-lessmain">
+                  Dive into Our Editing Portfolio
+                </span>
+              </p>{" "}
+            </div>{" "}
+            <div className="col-lg-11 col-12 text-center align-self-center mt-5 d-md-none d-block">
+              <div className="display-2 anton text-primarys text-uppercase pb-lg-3 pb-3">
+                <span className="text-main">Portfolio</span>
+              </div>
+              <p className="fs-3 text-uppercase  fw-bolder text-primarys pb-2">
+                Seeing is Believing:
                 <span className="text-lessmain">
                   Dive into Our Editing Portfolio
                 </span>
@@ -72,7 +83,11 @@ const HomeSection7 = () => {
               {portfoliodata.map((i) => {
                 return (
                   <div
-                    className=" text- px-lg-4 px-2 border pointer"
+                    className={
+                      slectedcetagory === i.name
+                        ? " text-main px-lg-4 px-2 fs-4 pointer"
+                        : " text- px-lg-4 px-2 fs-4 pointer"
+                    }
                     style={{
                       whiteSpace: "nowrap",
                       width: "max-content",
@@ -82,6 +97,9 @@ const HomeSection7 = () => {
                     }}
                   >
                     {i.name}
+                    {slectedcetagory === i.name && (
+                      <hr className="w-25 border-5 opacity-100 mt-2 m-0 rounded-5" />
+                    )}
                   </div>
                 );
               })}

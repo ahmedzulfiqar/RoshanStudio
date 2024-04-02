@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import Header from "../desgin-blocks/Header";
+import Footer from "../desgin-blocks/Footer";
+import Portfolio from "../pages/Portfolio";
 
 function Routerfile() {
   const { pathname } = useLocation();
@@ -17,7 +19,9 @@ function Routerfile() {
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </>
