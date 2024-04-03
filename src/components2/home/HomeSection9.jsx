@@ -20,7 +20,7 @@ const HomeSection9 = () => {
               </p>
             </div>
             <div className="col-md-8 col-12 text-start d-md-none d-block  align-self-center ps-md-0">
-              <div className="display-3 anton text-dark text-uppercase pb-lg-4 pb-2 ">
+              <div className="display-2 anton text-dark text-uppercase pb-lg-4 pb-2 ">
                 Getting started is a<span className="text-main"> breeze</span>
               </div>
               <p className="fs-6 small text-dark">

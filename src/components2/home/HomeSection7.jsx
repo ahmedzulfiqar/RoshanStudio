@@ -78,7 +78,7 @@ const HomeSection7 = () => {
             </div>{" "}
             <div
               ref={scrollerRef}
-              className="col-12 barshop overflow-x-scroll d-flex text-center justify-content-center   pt-md-5 fw-bolder"
+              className="col-12 barshop overflow-x-scroll  text-center justify-content-center d-md-flex d-none   pt-md-5 fw-bolder"
             >
               {portfoliodata.map((i) => {
                 return (
@@ -87,6 +87,34 @@ const HomeSection7 = () => {
                       slectedcetagory === i.name
                         ? " text-main px-lg-4 px-2 fs-4 pointer"
                         : " text- px-lg-4 px-2 fs-4 pointer"
+                    }
+                    style={{
+                      whiteSpace: "nowrap",
+                      width: "max-content",
+                    }}
+                    onClick={() => {
+                      setslectedcetagory(i.name);
+                    }}
+                  >
+                    {i.name}
+                    {slectedcetagory === i.name && (
+                      <hr className="w-25 border-5 opacity-100 mt-2 m-0 rounded-5" />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+            <div
+              ref={scrollerRef}
+              className="col-12 barshop overflow-x-scroll  text-center justify-content-center d-md-none d-flex   pt-md-5 fw-bolder"
+            >
+              {portfoliodata.map((i) => {
+                return (
+                  <div
+                    className={
+                      slectedcetagory === i.name
+                        ? " text-main px-lg-4 px-2 fs-6 pointer"
+                        : " text- px-lg-4 px-2 fs-6 pointer"
                     }
                     style={{
                       whiteSpace: "nowrap",

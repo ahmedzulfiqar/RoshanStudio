@@ -11,7 +11,7 @@ const HomeSection6 = () => {
           <div className="row m-0 justify-content-between  mt-md-0 mt-3">
             <div className="col-lg-6 col-12 text-start d-md-block d-none align-self-center">
               <div className="display-3 anton text-light text-uppercase pb-lg-4 pb-2">
-                Our <span className="text-primarys">Values</span>
+                Our <span className="text-dark">Values</span>
               </div>
               <p className="fs-5 text-light pb-4">
                 At our video editing agency, we breathe life into your stories.

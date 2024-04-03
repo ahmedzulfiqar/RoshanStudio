@@ -26,18 +26,18 @@ const HomeSection10 = () => {
       <div className="container px-0 ps-lg-0 ps-2 py-5">
         <div className="row m-0 justify-content-between">
           <div className="col-md-8 col-12 text-start d-md-block d-none align-self-center ps-md-0">
-            <p className="fs-2 text-uppercase fw-bolder">Testimonials</p>
-            <div className="display-3 anton text-warning text-uppercase pb-lg-2 pb-2">
-              Client Stories:
+            <p className="fs-2 text-uppercase fw-bolder text-light">Testimonials</p>
+            <div className="display-3 anton text-dark text-uppercase pb-lg-2 pb-2">
+            CUSTOMER REVIEWS
             </div>
             <div className="display-5 fw-bolder text-light pb-lg-2 pb-2">
               Why They Choose Us
             </div>
           </div>
           <div className="col-md-8 col-12 text-start d-md-none d-block align-self-center ps-md-0">
-            <p className="fs-2 fw-semibold">Testimonials</p>
-            <div className="display-3 anton small text-warning pb-lg-2 pb-2">
-              Client Stories:
+            <p className="fs-1 fw-semibold  text-light">Testimonials</p>
+            <div className="display-2 anton small text-dark text-uppercase pb-lg-2 pb-2">
+            CUSTOMER REVIEWS
             </div>
             <div className="display-5 small fw-bolder text-light pb-lg-2 pb-2">
               Why They Choose Us
@@ -53,8 +53,8 @@ const HomeSection10 = () => {
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
               slidesPerView={1}
+              className="sliderr"
               spaceBetween={50}
-              style={{ paddingTop: "80px" }}
               breakpoints={{
                 375: {
                   slidesPerView: 1,

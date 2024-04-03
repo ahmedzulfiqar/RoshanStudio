@@ -60,14 +60,20 @@ function Header() {
                 </div>
                 <div className="fs-3 px-xxl-3 px-1   align-self-center ">
                   {" "}
-                  Services
+                  <Link to="/services">Services</Link>
                 </div>
-                <div className="fs-3  px-xxl-3 px-1   align-self-center me-xxl-5">
+                <Link
+                  className="fs-3  px-xxl-3 px-1   align-self-center me-xxl-5"
+                  to="/about"
+                >
                   About Us
-                </div>
-                <div className="fs-3 py-2 ms-xxl-5 text-light ms-2 btn-main rounded-1 px-4 align-self-center  ">
+                </Link>
+                <Link
+                  className="fs-3 py-2 ms-xxl-5 text-light ms-2 btn-main rounded-1 px-4 align-self-center  "
+                  to="/contact"
+                >
                   Contact Us
-                </div>
+                </Link>
               </div>
               {/*  <div className="d-block position-absolute text-start  bottom-0 pb-3 ">
                 <div className="fs-1 text-dark text-uppercase">Socials</div>
@@ -125,13 +131,34 @@ function Header() {
           transition={{ duration: 0.3, delay: 0 }}
           className="fixednavbar bg-white border-0 shadow position-fixed z-0 w-100 top-0 h-100 end-0 p-5 d-lg-none d-flex justify-content-center align-items-center"
         >
-          <div className="d-block text-center text-uppercase text-dark anton">
-            <div className="fs-1 py-3 items">Home</div>
-            <div className="fs-1 py-3 items">Our Work</div>
-            <div className="fs-1 py-3 items">Services</div>
-            <div className="fs-1 py-3 items">About Us</div>
+          <div
+            className="d-block text-center text-uppercase text-dark anton"
+            onClick={() => setopen(!open)}
+          >
+            <div className="fs-1 py-3 items">
+              <Link to={"/home"}>Home</Link>
+            </div>
+            <div className="fs-1 py-3 items">
+              {" "}
+              <Link className="fs-1 py-3 items" to={"/portfolio"}>
+                Our Work
+              </Link>
+            </div>
+            <div className="fs-1 py-3 items">
+              {" "}
+              <Link className="fs-1 py-3 items" to={"/services"}>
+                Services
+              </Link>
+            </div>
+            <div className="fs-1 py-3 items">
+              {" "}
+              <Link className="fs-1 py-3 items" to={"/about"}>
+                About Us
+              </Link>
+            </div>
             <div className="fs-1 py-2 mt-4 btn-main text-light  rounded-1 px-4 items items2">
-              Contact Us
+              {" "}
+              <Link to={"/contact"}>Contact Us</Link>
             </div>
           </div>
           <div className="d-block position-absolute text-center items  bottom-0  ">

@@ -22,7 +22,7 @@ const HomeSection8 = () => {
               </p>
             </div>
             <div className="col-md-8 col-12 text-start d-md-none d-block  align-self-center ps-md-0">
-              <div className="display-3 anton text-light text-uppercase pb-lg-4 pb-2 ">
+              <div className="display-2 anton text-light text-uppercase pb-lg-4 pb-2 ">
                 why to chose
                 <span className="text-dark"> roshan studio</span>
               </div>
@@ -34,7 +34,7 @@ const HomeSection8 = () => {
               </p>
             </div>{" "}
           </div>
-          <div className="row justify-content-between mt-4 m-0 ">
+          <div className="row justify-content-between mt-md-4 mt-2 m-0 ">
             <div className="row justify-content-center pt-2 m-0">
               <div className="col-md-6 col-lg-3 col-6 text-center">
                 <div className="rounded-lg rounded bg-translucent my-2   text-center p-md-5 py-4 px-3">

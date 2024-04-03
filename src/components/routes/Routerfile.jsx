@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import Header from "../desgin-blocks/Header";
 import Footer from "../desgin-blocks/Footer";
 import Portfolio from "../pages/Portfolio";
+import Services from "../pages/Services";
+import About from "../pages/About";
 
 function Routerfile() {
   const { pathname } = useLocation();
@@ -20,6 +22,8 @@ function Routerfile() {
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
           </Routes>
           <Footer />
         </div>
