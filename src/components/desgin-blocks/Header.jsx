@@ -47,7 +47,9 @@ function Header() {
         <div className="container px-0 ps-lg-0 ps-2">
           <div className="row m-0">
             <div className="col-lg-4  col-12 ">
-              <div className="fs-1  position-relative z-3">ROSHAN STUDIO</div>
+              <Link className="fs-1  position-relative z-3" to="/home">
+                ROSHAN STUDIO
+              </Link>
             </div>
             <motion.div className="col-8 d-lg-flex d-none justify-content-between align-items-center">
               <div className="d-flex text-start w-100 justify-content-end   text-uppercase text-  anton">

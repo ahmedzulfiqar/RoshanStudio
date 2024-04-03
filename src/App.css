@@ -34,11 +34,15 @@ i {
   --lessmain: #2b78f3;
   --primary: #15181a;
   --color: #f89e52;
+  --second: #ebe8ef;
   --new: #f4f1f2;
 }
 
 .bg-main {
   background-color: var(--main) !important;
+}
+.bg-second {
+  background-color: var(--second) !important;
 }
 .bg-lessmain {
   background-color: var(--lessmain) !important;
@@ -167,4 +171,9 @@ i {
 }
 .pointerer {
   pointer-events: none !important;
+}
+.texts {
+  letter-spacing: 5px !important;
+}
+.text-place::placeholder {
 }
