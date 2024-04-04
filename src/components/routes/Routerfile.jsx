@@ -9,11 +9,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 
 function Routerfile() {
-  const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
   return (
     <>
       <div className="row m-0 p-0 ">

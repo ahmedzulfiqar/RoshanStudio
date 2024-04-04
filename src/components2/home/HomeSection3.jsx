@@ -1,5 +1,6 @@
+import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
-
+import { Link } from "react-router-dom";
 const HomeSection3 = () => {
   return (
     <>
@@ -9,7 +10,13 @@ const HomeSection3 = () => {
       >
         <div class="container px-0 ps-lg-0 ps-2">
           <div className="row m-0 justify-content-between">
-            <div className="col-lg-6 col-12 text-start d-md-block d-none align-self-center">
+            <motion.div
+              className="col-lg-6 col-12 text-start d-md-block d-none align-self-center"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+            >
               <div className="display-4 anton text-primarys pb-lg-4 pb-2">
                 A NEW KIND OF VIDEO PRODUCTION AGENCY
               </div>
@@ -26,11 +33,20 @@ const HomeSection3 = () => {
                 At Venture, we never settle for average, we want you to shine
                 brightly and help you change the world!
               </p>{" "}
-              <div className="btn btn-lg fs-4 mt-lg-4 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
+              <Link
+                to="/contact"
+                className="btn btn-lg fs-4 mt-lg-4 btn-main text-uppercase text-light anton px-3 py-3 rounded-1"
+              >
                 Got a Project? Lets talk!
-              </div>
-            </div>{" "}
-            <div className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block">
+              </Link>
+            </motion.div>{" "}
+            <motion.div
+              className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+            >
               <div className="display-5 anton text-primarys pb-lg-4 pb-3">
                 A NEW KIND OF VIDEO PRODUCTION AGENCY
               </div>
@@ -47,11 +63,20 @@ const HomeSection3 = () => {
                 At Venture, we never settle for average, we want you to shine
                 brightly and help you change the world!
               </p>{" "}
-              <div className="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
+              <Link
+                to="/contact"
+                className="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1"
+              >
                 Got a Project? Lets talk!
-              </div>
-            </div>
-            <div className="col-lg-5 col-12 align-self-center my-md-5 mb-4 ">
+              </Link>
+            </motion.div>
+            <motion.div
+              className="col-lg-5 col-12 align-self-center my-md-5 mb-4 "
+              initial={{ opacity: 0, y: 0 }}
+              whileInView={{ opacity: 1, y: 20 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+            >
               <img
                 src="https://467997.fs1.hubspotusercontent-na1.net/hub/467997/hubfs/manifesto.webp?width=1000&name=manifesto.webp"
                 alt=""
@@ -69,7 +94,7 @@ const HomeSection3 = () => {
                   <span className="text-main">ROSHAN STUDIO</span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

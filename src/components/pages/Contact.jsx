@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import HomeSection10 from "../../components2/home/HomeSection10";
-
+import emailjs from "emailjs-com";
 const Contact = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPhoneNumber("");
+    setMessage("");
+  };
+
   return (
     <>
       <div
@@ -20,7 +36,7 @@ const Contact = () => {
                 className="text-light anton   text-uppercase display-1"
                 style={{}}
               >
-                LET'S TALK
+                LET'S <span className="text-main"> TALK</span>
               </div>
               <p className="text-light py-4 fs-4">
                 Connecting with us, your gateway to support and solutions. Reach
@@ -86,12 +102,16 @@ const Contact = () => {
                     type="text"
                     className="w-100 fs-4 rounded d-md-block d-none py-2 px-2 border-2  mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="First Name"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                     required
                   />
                   <input
                     type="text"
                     className="w-100 fs-5 py-2  rounded px-2 border-2 d-md-none d-block mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="First Name"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                     required
                   />
                 </div>
@@ -100,12 +120,16 @@ const Contact = () => {
                     type="text"
                     className="w-100  fs-4 rounded d-md-block d-none py-2 px-2 border-2  mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="Last Name"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                     required
                   />
                   <input
                     type="text"
                     className="w-100  fs-5 py-2  rounded px-2 border-2 d-md-none d-block mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="Last Name"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                     required
                   />
                 </div>
@@ -117,12 +141,16 @@ const Contact = () => {
                     className="w-100 fs-4 rounded d-md-block d-none py-2 px-2 border-2  mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="Email Address"
                     required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <input
                     type="email"
                     className="w-100 fs-5 py-2  rounded px-2 border-2 d-md-none d-block mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="Email Address"
                     required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="col-md-6">
@@ -131,12 +159,16 @@ const Contact = () => {
                     className="w-100 fs-4 rounded d-md-block d-none py-2 px-2 border-2  mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="Phone Number"
                     required
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                   />
                   <input
                     type="number"
                     className="w-100 fs-5 py-2  rounded px-2 border-2 d-md-none d-block mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="Phone Number"
                     required
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                   />
                 </div>
               </div>
@@ -147,12 +179,16 @@ const Contact = () => {
                     className="w-100 fs-4 rounded d-md-block d-none py-2 px-2 border-2 mb-md-3  mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="Your Message"
                     required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                   <textarea
                     type="text"
                     className="w-100 fs-5 py-2  rounded px-2 border-2 d-md-none d-block mt-md-0 mt-3 border-secondary text-secondary anton text-place"
                     placeholder="Your Message"
                     required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
               </div>
@@ -172,7 +208,7 @@ const Contact = () => {
         <div class="container my-5 ">
           <hr class="pt-1 text-dark" />
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-12">
             <h6 className="text-secondary font-monospace fs-5 anton ">
               Our Locations
@@ -191,18 +227,17 @@ const Contact = () => {
                 alt="Sample Image"
               />
               <div class="card-body p-4">
-                <h5 class="card-title px-md-2 anton fs-1">NOTTINGHAM HQ</h5>
-                <p class="card-text px-md-2 anton fs-5">
-                  Dryden Enterprise Centre NTU <br /> Dryden Street, Nottingham{" "}
+                <h5 class="card-title px-md-2 anton fs-1">ISLAMABAD HQ</h5>
+                <p class="card-text px-md-2  fs-5">
+                  Dryden Enterprise Centre NTU <br /> Dryden Street, Islamabad{" "}
                   <br /> NG1 4FQ <br />
-                  UK
+                  Pakistan
                 </p>
               </div>
             </div>
           </div>{" "}
-        </div>
+      </div>*/}
       </div>{" "}
-      <HomeSection10 />
     </>
   );
 };

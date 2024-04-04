@@ -4,6 +4,7 @@ import HomeSection4 from "../../components2/home/HomeSection4";
 import HomeSection5 from "../../components2/home/HomeSection5";
 import HomeSection6 from "../../components2/home/HomeSection6";
 import HomeSection3 from "../../components2/home/HomeSection3";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -71,9 +72,12 @@ const About = () => {
                 At Roshan Studio, we never settle for average, we want you to
                 shine brightly and help you change the world!
               </p>{" "}
-              <div className="btn btn-lg fs-4 mt-lg-4 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
+              <Link
+                to="/contact"
+                className="btn btn-lg fs-4 mt-lg-4 btn-main text-uppercase text-light anton px-3 py-3 rounded-1"
+              >
                 Got a Project? Lets talk!
-              </div>
+              </Link>
             </div>{" "}
             <div className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block">
               <div className="display-5 anton text-primarys pb-lg-4 pb-3">
@@ -92,9 +96,12 @@ const About = () => {
                 At Venture, we never settle for average, we want you to shine
                 brightly and help you change the world!
               </p>{" "}
-              <div className="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
+              <Link
+                to="/contact"
+                className="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1"
+              >
                 Got a Project? Lets talk!
-              </div>
+              </Link>
             </div>
             <div className="col-lg-5 col-12 align-self-center my-md-5 mb-4 ">
               <img

@@ -138,7 +138,7 @@ const HomeSection7 = () => {
                   .filter((data) => data.name == slectedcetagory)[0]
                   .videos.map((i) => {
                     return (
-                      <div className="col-6 px-2 py-2  s">
+                      <div className="col-lg-6 col-12 px-2 py-2  s">
                         <div className="card border-0 shadow rounded-4 overflow-hidden">
                           <img
                             src={i.thumbnail}

@@ -39,10 +39,13 @@ function Header() {
   }, []);
   return (
     <>
-      <div
+      <motion.div
         className={`col-12 position-fixed navbarer z-3 anton  ${
           scrolled ? "bg-new py-3 shadow text-dark" : "py-4 text-light"
         }`}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: .5, duration: 0.5 }}
       >
         <div className="container px-0 ps-lg-0 ps-2">
           <div className="row m-0">
@@ -185,7 +188,7 @@ function Header() {
             </div>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </>
   );
 }

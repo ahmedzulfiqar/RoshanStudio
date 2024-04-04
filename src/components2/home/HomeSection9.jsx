@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeSection9 = () => {
   return (
@@ -89,9 +90,9 @@ const HomeSection9 = () => {
             </div>
           </div>
           <div class="d-flex justify-content-center mt-2 mt-md-0">
-            <div class="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
+            <Link to="/contact" class="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
               CONTACT US
-            </div>
+            </Link>
           </div>
         </div>
       </div>

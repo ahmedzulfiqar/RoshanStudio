@@ -1,15 +1,22 @@
+import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
-
+import { Link } from "react-router-dom";
 const HomeSection4 = () => {
   return (
     <>
       <div
         className="bg-main border d-flex align-items-center position-relative overflow-hidden"
-        style={{ minHeight: "75vh" }}
+        style={{ minHeight: "65vh" }}
       >
         <div class="container px-0 ps-lg-0 ps-2">
           <div className="row m-0 justify-content-between">
-            <div className="col-lg-6 order-1 col-12 text-start d-md-block d-none align-self-center ps-5">
+            <motion.div
+              className="col-lg-6 order-1 col-12 text-start d-md-block d-none align-self-center ps-5"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+            >
               <div className="display-3 ms-1 anton text-light text-uppercase pb-lg-4 pb-2 ">
                 Producing videos for brands{" "}
                 <span className="text-primarys"> worldwide</span>{" "}
@@ -20,11 +27,20 @@ const HomeSection4 = () => {
                 operating in the UK, Europe, North America & Asia.
               </p>
 
-              <div className="btn ms-1 btn-lg fs-4 mt-lg-4 btn-primarys text-uppercase text-light anton px-3 py-3 rounded-1">
+              <Link
+                to="/about"
+                className="btn ms-1 btn-lg fs-4 mt-lg-4 btn-primarys text-uppercase text-light anton px-3 py-3 rounded-1"
+              >
                 Learn More About Us
-              </div>
-            </div>{" "}
-            <div className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block">
+              </Link>
+            </motion.div>{" "}
+            <motion.div
+              className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+            >
               <div className="display-4 anton text-light pb-lg-4 pb-3">
                 Producing videos for brands{" "}
                 <span className="text-primarys"> worldwide</span>{" "}
@@ -34,26 +50,41 @@ const HomeSection4 = () => {
                 Studio is the perfect video production agency for clients
                 operating in the UK, Europe, North America & Asia.
               </p>
-              <div className="btn btn-lg fs-5 mt-lg-4 mt-2 btn-primarys text-uppercase text-light anton px-3 py-3 rounded-1">
+              <Link
+                to="/about"
+                className="btn btn-lg fs-5 mt-lg-4 mt-2 btn-primarys text-uppercase text-light anton px-3 py-3 rounded-1"
+              >
                 Learn More About Us
-              </div>
-            </div>
-            <div className="col-lg-6 order-0 col-12 align-self-center my-md-5 mb-4 ">
+              </Link>
+            </motion.div>
+            <motion.div
+              className="col-lg-6 order-0 col-12 align-self-center my-md-5 mb-4 "
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+            >
               <img
                 src="https://467997.fs1.hubspotusercontent-na1.net/hub/467997/hubfs/global%20video%20company.webp?width=1000&name=global%20video%20company.webp"
                 alt=""
                 className="img-fluid rounded-2"
               />
-            </div>
+            </motion.div>
           </div>
         </div>{" "}
-        <div className="behind position-absolute end-0 top-0 z-2">
+        <motion.div
+          className="behind position-absolute end-0 top-0 z-2"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 1 }}
+          viewport={{ once: true }}
+        >
           <img
             src="https://marksoln.in/assets/img/images/h3_project_shape.png"
             alt=""
             className="img-fluid"
           />
-        </div>
+        </motion.div>
       </div>
     </>
   );
