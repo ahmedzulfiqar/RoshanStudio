@@ -177,3 +177,7 @@ i {
 }
 .text-place::placeholder {
 }
+@media (max-width: 768px) {
+  .video-popup-inner {
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const HomeSection9 = () => {
   return (
@@ -8,33 +9,53 @@ const HomeSection9 = () => {
         className="border d-flex align-items-center position-relative "
         style={{ minHeight: "75vh" }}
       >
-        <div class="container py-5 mt-md-3 mt-0">
+        <div className="container py-5 mt-md-3 mt-0">
           <div className="row m-0 justify-content-center">
             <div className=" col-md-8 col-12 text-center d-md-block d-none  align-self-center ps-md-0">
-              <div className="display-3 anton text-dark text-uppercase pb-lg-4 pb-2 ">
-                Getting started is a<span className="text-main"> breeze</span>
-              </div>
-              <p className="fs-5 text-dark">
-                Over the last 18 years we've developed a fully managed end to
-                end video production process that not only delivers amazing
-                results, it also makes us exceptionally easy to work with.
-              </p>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1, duration: 1 }}
+                viewport={{ once: true }}
+              >
+                <div className="display-3 anton text-dark text-uppercase pb-lg-4 pb-2 ">
+                  Getting started is a<span className="text-main"> breeze</span>
+                </div>
+                <p className="fs-5 text-dark">
+                  Over the last 18 years we've developed a fully managed end to
+                  end video production process that not only delivers amazing
+                  results, it also makes us exceptionally easy to work with.
+                </p>
+              </motion.div>
             </div>
             <div className="col-md-8 col-12 text-start d-md-none d-block  align-self-center ps-md-0">
-              <div className="display-2 anton text-dark text-uppercase pb-lg-4 pb-2 ">
-                Getting started is a<span className="text-main"> breeze</span>
-              </div>
-              <p className="fs-6 small text-dark">
-                Over the last 18 years we've developed a fully managed end to
-                end video production process that not only delivers amazing
-                results, it also makes us exceptionally easy to work with.
-              </p>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1, duration: 1 }}
+                viewport={{ once: true }}
+              >
+                <div className="display-2 anton text-dark text-uppercase pb-lg-4 pb-2 ">
+                  Getting started is a<span className="text-main"> breeze</span>
+                </div>
+                <p className="fs-6 small text-dark">
+                  Over the last 18 years we've developed a fully managed end to
+                  end video production process that not only delivers amazing
+                  results, it also makes us exceptionally easy to work with.
+                </p>
+              </motion.div>
             </div>{" "}
           </div>
           <div className="row justify-content-center mt-md-4 mt-2 mx-0 text-center">
             <div className="row justify-content-center pt-2">
               <div className="col-md-6 col-lg-4 col-12 text-center">
-                <div className="rounded-lg rounded bg-new my-2  text-center p-5">
+                <motion.div
+                  className="rounded-lg rounded bg-new my-2  text-center p-5"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1, duration: 1 }}
+                  viewport={{ once: true }}
+                >
                   <div className="card-body">
                     <h4>
                       <i className="fa fa-thumbs-up text-info display-4 mb-2"></i>
@@ -49,10 +70,16 @@ const HomeSection9 = () => {
                       the next steps comprehensively.
                     </p>
                   </div>
-                </div>
+                </motion.div>
               </div>
               <div className="col-md-6 col-lg-4 col-12 text-center">
-                <div className="rounded-lg rounded bg-new my-2  text-center p-5">
+                <motion.div
+                  className="rounded-lg rounded bg-new my-2  text-center p-5"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1, duration: 1 }}
+                  viewport={{ once: true }}
+                >
                   <div className="card-body">
                     <h4>
                       <i className="fa fa-phone text-primary display-4 mb-2"></i>
@@ -67,10 +94,16 @@ const HomeSection9 = () => {
                       immediate video needs.
                     </p>
                   </div>
-                </div>
+                </motion.div>
               </div>
               <div className="col-md-6 col-lg-4 col-12 text-center">
-                <div className="rounded-lg rounded bg-new my-2  text-center p-5">
+                <motion.div
+                  className="rounded-lg rounded bg-new my-2  text-center p-5"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1, duration: 1 }}
+                  viewport={{ once: true }}
+                >
                   <div className="card-body">
                     <h4>
                       <i className="fa fa-newspaper text-danger display-4 mb-2"></i>
@@ -85,14 +118,24 @@ const HomeSection9 = () => {
                       video might look, sound and feel.
                     </p>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
           <div class="d-flex justify-content-center mt-2 mt-md-0">
-            <Link to="/contact" class="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
-              CONTACT US
-            </Link>
+            <motion.div
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+            >
+              <Link
+                to="/contact"
+                class="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1"
+              >
+                CONTACT US
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>

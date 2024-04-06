@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import Header from "../desgin-blocks/Header";
@@ -9,7 +9,10 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 
 function Routerfile() {
-
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <>
       <div className="row m-0 p-0 ">

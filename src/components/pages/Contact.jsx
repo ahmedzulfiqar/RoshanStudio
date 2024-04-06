@@ -194,13 +194,9 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="btn btn-lg fs-4 mt-lg-3 border-main border-3 text-uppercase text-main fw-bold px-5  mt-md-5 mt-4 py-2 rounded-2"
+                className="btn btn-lg fs-4 mt-lg-3 bg-main border-3 text-uppercase text-light fw-bold px-4  mt-md-5 mt-4 py-2 rounded-2"
               >
-                <i
-                  class="fa fa-paper-plane align-self-center pe-2 fs-3"
-                  aria-hidden="true"
-                ></i>{" "}
-                Send
+                Send Email
               </button>
             </form>
           </div>

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -38,6 +39,11 @@ const HomeSection5 = () => {
     },
   ];
 
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 50 },
+  };
+
   return (
     <>
       <div
@@ -45,7 +51,13 @@ const HomeSection5 = () => {
         style={{ minHeight: "75vh" }}
       >
         <div class="container  px-0 ps-lg-0 ps-2 py-5">
-          <div className="row m-0 justify-content-between ">
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 1 }}
+            viewport={{ once: true }}
+            className="row m-0 justify-content-between "
+          >
             <div className=" col-md-8 col-12 text-start d-md-block d-none  align-self-center ps-md-0">
               <div className="display-3 anton text-primarys text-uppercase pb-lg-4 pb-2 ">
                 our
@@ -68,7 +80,7 @@ const HomeSection5 = () => {
                 perfect fit for your audience.
               </p>
             </div>{" "}
-          </div>
+          </motion.div>
           <div className="row mt-lg-5 mt-3 justify-content-center m-0 ">
             <div className="col-12 ">
               <Swiper
@@ -107,7 +119,13 @@ const HomeSection5 = () => {
                 {card_data.map((i) => {
                   return (
                     <SwiperSlide>
-                      <div className="row m-0">
+                      <motion.div
+                        className="row m-0"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 1, duration: 1 }}
+                      >
                         <div className="col-12 p-0 ">
                           <img
                             src={i.imgs}
@@ -117,7 +135,7 @@ const HomeSection5 = () => {
                           <h3 className="pt-lg-4 pt-4 anton ">{i.heading}</h3>
                           <p className="pt-0">{i.text}</p>
                         </div>
-                      </div>
+                      </motion.div>
                     </SwiperSlide>
                   );
                 })}

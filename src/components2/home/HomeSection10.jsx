@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
@@ -17,18 +18,26 @@ const HomeSection10 = () => {
     { data_name: "123" },
     { data_name: "123" },
   ];
-  const swiper = useSwiper();
+
   return (
-    <div
+    <motion.div
       className="bg-main border d-flex align-items-center position-relative ps-2"
       style={{ minHeight: "75vh" }}
     >
-      <div className="container px-0 ps-lg-0 ps-2 py-5">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 1 }}
+        viewport={{ once: true }}
+        className="container px-0 ps-lg-0 ps-2 py-5"
+      >
         <div className="row m-0 justify-content-between">
           <div className="col-md-8 col-12 text-start d-md-block d-none align-self-center ps-md-0">
-            <p className="fs-2 text-uppercase fw-bolder text-light">Testimonials</p>
+            <p className="fs-2 text-uppercase fw-bolder text-light">
+              Testimonials
+            </p>
             <div className="display-3 anton text-dark text-uppercase pb-lg-2 pb-2">
-            CUSTOMER REVIEWS
+              CUSTOMER REVIEWS
             </div>
             <div className="display-5 fw-bolder text-light pb-lg-2 pb-2">
               Why They Choose Us
@@ -37,7 +46,7 @@ const HomeSection10 = () => {
           <div className="col-md-8 col-12 text-start d-md-none d-block align-self-center ps-md-0">
             <p className="fs-1 fw-semibold  text-light">Testimonials</p>
             <div className="display-2 anton small text-dark text-uppercase pb-lg-2 pb-2">
-            CUSTOMER REVIEWS
+              CUSTOMER REVIEWS
             </div>
             <div className="display-5 small fw-bolder text-light pb-lg-2 pb-2">
               Why They Choose Us
@@ -47,7 +56,6 @@ const HomeSection10 = () => {
 
         <div className="row m-0 justify-content-start ">
           <div className="col-md-12 col-12 py-md-3">
-            {" "}
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               onSwiper={(swiper) => console.log(swiper)}
@@ -76,7 +84,13 @@ const HomeSection10 = () => {
             >
               {data.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className="card ps-0">
+                  <motion.div
+                    className="card ps-0"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5, duration: 1 }}
+                    viewport={{ once: true }}
+                  >
                     <div className="card-body px-4">
                       <h2 className="text-center d-md-block d-none">
                         <img
@@ -97,24 +111,28 @@ const HomeSection10 = () => {
                         has helped us to increase brand awareness."
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
         </div>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         className="behind position-absolute start-0 top-0 z-0 pointerer"
         style={{ transform: "rotate(180deg)" }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 1 }}
+        viewport={{ once: true }}
       >
         <img
           src="https://marksoln.in/assets/img/images/h3_project_shape.png"
           alt=""
           className="img-fluid"
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
