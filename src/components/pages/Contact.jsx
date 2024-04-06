@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import HomeSection10 from "../../components2/home/HomeSection10";
 import emailjs from "emailjs-com";
@@ -29,7 +30,12 @@ const Contact = () => {
         }}
       >
         <div className="overlaygradient w-100"></div>
-        <div className="container px-0 ps-lg-0 ps-2">
+        <motion.div
+          initial={{ x: -30, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1.3, duration: 1 }}
+          className="container px-0 ps-lg-0 ps-2"
+        >
           <div className="row position-relative z-2 m-0">
             <div className="col-md-7 ">
               <div
@@ -51,31 +57,52 @@ const Contact = () => {
                   Contact US
                 </div>
               </a>
-              <img
+              <motion.img
                 src="https://www.venturevideos.com/hs-fs/hubfs/Untitled%20design%20(39).png?width=1080&height=1080&name=Untitled%20design%20(39).png"
                 alt=""
                 className="img-fluid position-absolute w-25 arrow"
+                initial={{ x: 30, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 2.5, duration: 1 }}
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div class="container px-md-0 px-3 ps-lg-0 ps-2 my-5 justify-content-between">
-        <div className="row px-4 px-md-0">
-          <div className="col-md-4  my-md-3 d-md-block d-none">
+      <motion.div class="container px-md-0 px-3 ps-lg-0 ps-2 my-5 justify-content-between">
+        <motion.div className="row px-4 px-md-0">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1, duration: 1 }}
+            viewport={{ once: true }}
+            className="col-md-4  my-md-3 d-md-block d-none"
+          >
             <h5 className="fs-5 anton text-secondary">Hit The Digits</h5>
             <h1 className="display-4 anton texts text-uppercase">
               +1234567890
             </h1>
-          </div>
-          <div className="col-md-6 my-md-3 d-md-block d-none">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1, duration: 1 }}
+            viewport={{ once: true }}
+            className="col-md-6 my-md-3 d-md-block d-none"
+          >
             <h5 className="fs-5 anton text-secondary ">Drop us a line</h5>
             <h1 className="display-4 anton texts text-uppercase">
               RoshanStudion@gmail.com
             </h1>
-          </div>
-        </div>
-        <div className="row my-2 px-2 px-md-0">
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1, duration: 1 }}
+          viewport={{ once: true }}
+          className="row my-2 px-2 px-md-0"
+        >
           <div className="col-md-4 col-12 my-1 d-md-none d-block">
             <h5 className="fs-5 anton text-secondary">Hit The Digits</h5>
             <h1 className=" anton text-uppercase">+1234567890</h1>
@@ -84,17 +111,29 @@ const Contact = () => {
             <h5 className="fs-5 anton text-secondary ">Drop us a line</h5>
             <h1 className=" anton text-uppercase">RoshanStudion@gmail.com</h1>
           </div>
-        </div>
+        </motion.div>
         <div class="container">
           <hr class="my-md-4 mt-md-0 mt-4 text-dark" />
         </div>
         <div className="row mt-md-5 mt-5">
-          <div className="col-md-4 px-4 px-md-0">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.5, duration: 1 }}
+            viewport={{ once: true }}
+            className="col-md-4 px-4 px-md-0"
+          >
             <h1 className="display-5 anton  text-uppercase">
               SEND US A MESSAGE
             </h1>
-          </div>
-          <div className="col-md-8 px-4">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.5, duration: 1 }}
+            viewport={{ once: true }}
+            className="col-md-8 px-4"
+          >
             <form action="">
               <div className="row ">
                 <div className="col-md-6">
@@ -199,7 +238,7 @@ const Contact = () => {
                 Send Email
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
         <div class="container my-5 ">
           <hr class="pt-1 text-dark" />
@@ -233,7 +272,7 @@ const Contact = () => {
             </div>
           </div>{" "}
       </div>*/}
-      </div>{" "}
+      </motion.div>{" "}
     </>
   );
 };

@@ -72,10 +72,10 @@ const HomeSection3 = () => {
             </motion.div>
             <motion.div
               className="col-lg-5 col-12 align-self-center my-md-5 mb-4 "
-              initial={{ opacity: 0, y: 0 }}
-              whileInView={{ opacity: 1, y: 20 }}
-              transition={{ delay: 1, duration: 1 }}
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ delay: 1, duration: 1 }}
             >
               <img
                 src="https://467997.fs1.hubspotusercontent-na1.net/hub/467997/hubfs/manifesto.webp?width=1000&name=manifesto.webp"

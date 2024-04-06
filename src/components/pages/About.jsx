@@ -4,6 +4,7 @@ import HomeSection4 from "../../components2/home/HomeSection4";
 import HomeSection5 from "../../components2/home/HomeSection5";
 import HomeSection6 from "../../components2/home/HomeSection6";
 import HomeSection3 from "../../components2/home/HomeSection3";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -18,7 +19,12 @@ const About = () => {
         }}
       >
         <div className="overlaygradient w-100"></div>
-        <div className="container px-0 ps-lg-0 ps-2">
+        <motion.div
+          initial={{ x: -30, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1.3, duration: 1 }}
+          className="container px-0 ps-lg-0 ps-2"
+        >
           <div className="row position-relative z-2 m-0">
             <div className="col-md-7 ">
               <div
@@ -39,23 +45,33 @@ const About = () => {
                 ></i>{" "}
                 play ShowReel
               </div>
-              <img
+              <motion.img
                 src="https://www.venturevideos.com/hs-fs/hubfs/Untitled%20design%20(39).png?width=1080&height=1080&name=Untitled%20design%20(39).png"
                 alt=""
                 className="img-fluid position-absolute w-25 arrow"
+                initial={{ x: 30, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 2.5, duration: 1 }}
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
+
       <HomeSection2 />
       <div
         className="bg-new border d-flex align-items-center"
         style={{ minHeight: "75vh" }}
       >
-        <div class="container px-0 ps-lg-0 ps-2">
+        <motion.div class="container px-0 ps-lg-0 ps-2">
           <div className="row m-0 justify-content-between">
-            <div className="col-lg-6 col-12 text-start d-md-block d-none align-self-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+              className="col-lg-6 col-12 text-start d-md-block d-none align-self-center"
+            >
               <div className="display-2 anton text-uppercase text-primarys pb-lg-4 pb-2">
                 About Us
               </div>
@@ -78,8 +94,14 @@ const About = () => {
               >
                 Got a Project? Lets talk!
               </Link>
-            </div>{" "}
-            <div className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block">
+            </motion.div>{" "}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+              className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block"
+            >
               <div className="display-5 anton text-primarys pb-lg-4 pb-3">
                 A NEW KIND OF VIDEO PRODUCTION AGENCY
               </div>
@@ -102,8 +124,14 @@ const About = () => {
               >
                 Got a Project? Lets talk!
               </Link>
-            </div>
-            <div className="col-lg-5 col-12 align-self-center my-md-5 mb-4 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1, duration: 1 }}
+              viewport={{ once: true }}
+              className="col-lg-5 col-12 align-self-center my-md-5 mb-4 "
+            >
               <img
                 src="https://467997.fs1.hubspotusercontent-na1.net/hub/467997/hubfs/manifesto.webp?width=1000&name=manifesto.webp"
                 alt=""
@@ -121,12 +149,12 @@ const About = () => {
                   <span className="text-main">ROSHAN STUDIO</span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
+
       <HomeSection6 />
-      <div className="overlaygradient w-100"></div>
       <HomeSection5 />
     </>
   );

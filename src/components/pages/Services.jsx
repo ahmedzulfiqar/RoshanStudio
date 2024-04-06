@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const card_data = [
@@ -75,7 +76,12 @@ const Services = () => {
         }}
       >
         <div className="overlaygradient w-100"></div>
-        <div className="container px-0 ps-lg-0 ps-2">
+        <motion.div
+          initial={{ x: -30, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1.3, duration: 1 }}
+          className="container px-0 ps-lg-0 ps-2"
+        >
           <div className="row position-relative z-2 m-0">
             <div className="col-md-7 ">
               <div
@@ -84,11 +90,16 @@ const Services = () => {
               >
                 Our <span className="text-main"> Services</span>
               </div>
-              <p className="text-light py-4 fs-4">
+              <motion.p
+                className="text-light py-4 fs-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.5, duration: 1 }}
+              >
                 Where the magic happens. From concepts to final video edits,
                 we're talking bold ideas that deliver real results. Ready for
                 remarkable
-              </p>
+              </motion.p>
               <div className="btn btn-lg fs-4 mt-lg-3 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
                 <i
                   class="fa fa-play align-self-center pe-3 fs-3"
@@ -96,16 +107,18 @@ const Services = () => {
                 ></i>{" "}
                 play ShowReel
               </div>
-              <img
+              <motion.img
                 src="https://www.venturevideos.com/hs-fs/hubfs/Untitled%20design%20(39).png?width=1080&height=1080&name=Untitled%20design%20(39).png"
                 alt=""
                 className="img-fluid position-absolute w-25 arrow"
+                initial={{ x: 30, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 2.5, duration: 1 }}
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="overlaygradient w-100"></div>
       <div
         className="border -main d-flex align-items-center position-relative "
         style={{ minHeight: "75vh" }}
@@ -115,7 +128,13 @@ const Services = () => {
             <div className="row justify-content-center pt-2">
               {card_data.map((i) => {
                 return (
-                  <div className="col-lg-4 col-md-6 col-12 m-0 my-md-4 my-2">
+                  <motion.div
+                    className="col-lg-4 col-md-6 col-12 m-0 my-md-4 my-2"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 1.5, duration: 1 }}
+                  >
                     <div className="col-12 p-0 ">
                       <img
                         src={i.imgs}
@@ -125,7 +144,7 @@ const Services = () => {
                       <h3 className="pt-lg-4 pt-4 anton ">{i.heading}</h3>
                       <p className="pt-0">{i.text}</p>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
