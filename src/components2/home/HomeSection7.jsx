@@ -62,7 +62,7 @@ const HomeSection7 = () => {
               <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 0.4, duration: 0.3 }}
                 viewport={{ once: true }}
               >
                 <div className="display-4 anton text-primarys text-uppercase pb-lg-3 pb-2">
@@ -81,7 +81,7 @@ const HomeSection7 = () => {
               <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 0.4, duration: 0.3 }}
                 viewport={{ once: true }}
               >
                 <div className="display-2 anton text-primarys text-uppercase pb-lg-3 pb-3">
@@ -114,7 +114,7 @@ const HomeSection7 = () => {
                     }}
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1, duration: 1 }}
+                    transition={{ delay: 0.4, duration: 0 }}
                     viewport={{ once: true }}
                   >
                     {i.name}
@@ -144,7 +144,7 @@ const HomeSection7 = () => {
                     }}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1, duration: 1 }}
+                    transition={{ delay: 0, duration: 0 }}
                     viewport={{ once: true }}
                   >
                     {i.name}

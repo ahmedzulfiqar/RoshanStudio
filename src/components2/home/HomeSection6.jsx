@@ -14,7 +14,7 @@ const HomeSection6 = () => {
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
                 viewport={{ once: true }}
               >
                 <div className="display-3 anton text-light text-uppercase pb-lg-4 pb-2">
@@ -84,7 +84,7 @@ const HomeSection6 = () => {
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
                 viewport={{ once: true }}
               >
                 <div className="display-2 anton text-light pb-lg-4 pb-3  text-uppercase">
@@ -157,7 +157,7 @@ const HomeSection6 = () => {
                 className="img-fluid rounded-2"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
                 viewport={{ once: true }}
               />
             </div>

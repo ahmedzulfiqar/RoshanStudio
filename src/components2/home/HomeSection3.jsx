@@ -14,7 +14,7 @@ const HomeSection3 = () => {
               className="col-lg-6 col-12 text-start d-md-block d-none align-self-center"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
               viewport={{ once: true }}
             >
               <div className="display-4 anton text-primarys pb-lg-4 pb-2">
@@ -44,7 +44,7 @@ const HomeSection3 = () => {
               className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
               viewport={{ once: true }}
             >
               <div className="display-5 anton text-primarys pb-lg-4 pb-3">
@@ -75,7 +75,7 @@ const HomeSection3 = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
             >
               <img
                 src="https://467997.fs1.hubspotusercontent-na1.net/hub/467997/hubfs/manifesto.webp?width=1000&name=manifesto.webp"

@@ -6,7 +6,7 @@ const HomeSection11 = () => {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1, duration: 1 }}
+      transition={{ delay: 0.3, duration: 0.6 }}
       className="bg-new border d-flex align-items-center"
       style={{ minHeight: "75vh" }}
     >
@@ -24,7 +24,7 @@ const HomeSection11 = () => {
               className="display-5 anton text-primarys pb-lg-4 pb-2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
               viewport={{ once: true }}
             >
               Boost Your Business: <br />{" "}
@@ -34,7 +34,7 @@ const HomeSection11 = () => {
               className="fs-5"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
               viewport={{ once: true }}
             >
               At Roshan Studio, we amplify your business using the power of
@@ -84,7 +84,7 @@ const HomeSection11 = () => {
               className="display-3 anton text-primarys pb-lg-4 pb-2"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
             >
               Boost Your Business: <br />{" "}
               <span className="text-main"> Free Consultation</span>, Awaits!
@@ -93,7 +93,7 @@ const HomeSection11 = () => {
               className=""
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
               viewport={{ once: true }}
             >
               At Roshan Studio, we amplify your business using the power of
@@ -135,7 +135,7 @@ const HomeSection11 = () => {
             <motion.img
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.5, duration: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
               viewport={{ once: true }}
               src="https://images.unsplash.com/photo-1627244714766-94dab62ed964?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""

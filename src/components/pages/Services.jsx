@@ -79,7 +79,7 @@ const Services = () => {
         <motion.div
           initial={{ x: -30, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.3, duration: 1 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
           className="container px-0 ps-lg-0 ps-2"
         >
           <div className="row position-relative z-2 m-0">
@@ -94,7 +94,7 @@ const Services = () => {
                 className="text-light py-4 fs-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 1 }}
+                transition={{ delay: 0.5, duration: 0.6}}
               >
                 Where the magic happens. From concepts to final video edits,
                 we're talking bold ideas that deliver real results. Ready for
@@ -113,7 +113,7 @@ const Services = () => {
                 className="img-fluid position-absolute w-25 arrow"
                 initial={{ x: 30, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 2.5, duration: 1 }}
+                transition={{ delay: 0.5, duration: 0.3 }}
               />
             </div>
           </div>
@@ -133,7 +133,7 @@ const Services = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 1.5, duration: 1 }}
+                    transition={{ delay: 0.5, duration: 0.3 }}
                   >
                     <div className="col-12 p-0 ">
                       <img

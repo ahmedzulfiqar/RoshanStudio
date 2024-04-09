@@ -15,7 +15,7 @@ const HomeSection8 = () => {
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 0.5, duration: 1 }}
               >
                 <div className="display-3 anton text-light text-uppercase pb-lg-4 pb-2 ">
                   why to chose
@@ -56,7 +56,7 @@ const HomeSection8 = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.8, duration: 1  }}
+                  transition={{ delay: 0.4, duration: 1  }}
                 >
                   <div className="rounded-lg rounded bg-translucent my-2   text-center p-md-5 py-4 px-3">
                     <div className="card-body">
@@ -71,7 +71,7 @@ const HomeSection8 = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 1.1, duration: 1  }}
+                  transition={{ delay: .4, duration: 1  }}
                 >
                   <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                     <div className="card-body">
@@ -86,7 +86,7 @@ const HomeSection8 = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 1.4, duration: 1  }}
+                  transition={{ delay: .4, duration: 1  }}
                 >
                   <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                     <div className="card-body">
@@ -101,7 +101,7 @@ const HomeSection8 = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 1.7, duration: 1  }}
+                  transition={{ delay: .4, duration: 1  }}
                 >
                   <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                     <div className="card-body">

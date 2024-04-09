@@ -15,7 +15,7 @@ const HomeSection9 = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
                 viewport={{ once: true }}
               >
                 <div className="display-3 anton text-dark text-uppercase pb-lg-4 pb-2 ">
@@ -32,7 +32,7 @@ const HomeSection9 = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
                 viewport={{ once: true }}
               >
                 <div className="display-2 anton text-dark text-uppercase pb-lg-4 pb-2 ">
@@ -53,7 +53,7 @@ const HomeSection9 = () => {
                   className="rounded-lg rounded bg-new my-2  text-center p-5"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1, duration: 1 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
                   viewport={{ once: true }}
                 >
                   <div className="card-body">
@@ -77,7 +77,7 @@ const HomeSection9 = () => {
                   className="rounded-lg rounded bg-new my-2  text-center p-5"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1, duration: 1 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
                   viewport={{ once: true }}
                 >
                   <div className="card-body">
@@ -101,7 +101,7 @@ const HomeSection9 = () => {
                   className="rounded-lg rounded bg-new my-2  text-center p-5"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1, duration: 1 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
                   viewport={{ once: true }}
                 >
                   <div className="card-body">
@@ -126,7 +126,7 @@ const HomeSection9 = () => {
             <motion.div
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
               viewport={{ once: true }}
             >
               <Link

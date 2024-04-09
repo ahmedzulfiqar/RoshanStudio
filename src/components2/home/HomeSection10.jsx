@@ -27,7 +27,7 @@ const HomeSection10 = () => {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
         viewport={{ once: true }}
         className="container px-0 ps-lg-0 ps-2 py-5"
       >
@@ -88,7 +88,7 @@ const HomeSection10 = () => {
                     className="card ps-0"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5, duration: 1 }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
                     viewport={{ once: true }}
                   >
                     <div className="card-body px-4">
@@ -123,7 +123,7 @@ const HomeSection10 = () => {
         style={{ transform: "rotate(180deg)" }}
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
         viewport={{ once: true }}
       >
         <img
