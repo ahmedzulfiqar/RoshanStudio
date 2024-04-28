@@ -72,11 +72,10 @@ function Home() {
         </div>
       </motion.div>
       <HomeSection2 />
-      <HomeSection3 />
       <HomeSection4 />
       <HomeSection5 />
-      <HomeSection6 />
       <HomeSection7 />
+      <HomeSection6 />
       <HomeSection8 />
       <HomeSection9 />
       <HomeSection10 />

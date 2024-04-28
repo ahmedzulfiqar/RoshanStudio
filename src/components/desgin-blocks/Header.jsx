@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { animate, motion, stagger } from "framer-motion";
+import img from "../media/img/White R copy.png";
 import { Link } from "react-router-dom";
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,17 +42,26 @@ function Header() {
     <>
       <motion.div
         className={`col-12 position-fixed navbarer z-3 anton  ${
-          scrolled ? "bg-new py-3 shadow text-dark" : "py-4 text-light"
+          scrolled ? "bg-new py-md-2 shadow text-dark" : "py-md-3 text-light"
         }`}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: .5, duration: 0.5 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
       >
         <div className="container px-0 ps-lg-0 ps-2">
           <div className="row m-0">
             <div className="col-lg-4  col-12 ">
               <Link className="fs-1  position-relative z-3" to="/home">
-                ROSHAN STUDIO
+                {!scrolled ? (
+                  <img src={img} alt="" className="w-25" />
+                ) : (
+                  <img
+                    src={img}
+                    alt=""
+                    className="w-25"
+                    style={{ filter: "invert(100%)" }}
+                  />
+                )}
               </Link>
             </div>
             <motion.div className="col-8 d-lg-flex d-none justify-content-between align-items-center">

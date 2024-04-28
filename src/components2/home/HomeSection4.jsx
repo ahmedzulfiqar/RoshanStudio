@@ -64,11 +64,24 @@ const HomeSection4 = () => {
               transition={{ delay: 0.5, duration: 1 }}
               viewport={{ once: true }}
             >
-              <img
-                src="https://467997.fs1.hubspotusercontent-na1.net/hub/467997/hubfs/global%20video%20company.webp?width=1000&name=global%20video%20company.webp"
-                alt=""
-                className="img-fluid rounded-2"
-              />
+              <iframe
+                width="100%"
+                height="450"
+                src="https://www.youtube.com/embed/dxu97wnd-Z4"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                className="d-md-block d-none"
+              ></iframe>{" "}
+              <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/dxu97wnd-Z4"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                className="d-md-none d-block"
+              ></iframe>
             </motion.div>
           </div>
         </div>{" "}
