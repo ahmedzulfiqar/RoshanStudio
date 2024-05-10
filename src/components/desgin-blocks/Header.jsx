@@ -41,7 +41,7 @@ function Header() {
   return (
     <>
       <motion.div
-        className={`col-12 position-fixed navbarer z-3 anton  ${
+        className={`col-12 position-fixed navbarer z-3 Mazzard  ${
           scrolled ? "bg-new py-md-2 shadow text-dark" : "py-md-3 text-light"
         }`}
         initial={{ opacity: 0, y: -20 }}
@@ -123,7 +123,7 @@ function Header() {
               <div className="btn btn-lg  py-4 px-3 border-0 rounded-0  btn-main text-uppercase text-light d-md-block d-none">
                 Get a Quote
               </div>
-              <div className="btn btn-lg border-0 rounded-0  border-start border-dark border-opacity-10 py-md-4 px-md-4 p-2  btn-main text-uppercase text-light">
+              <div className="btn btn-lg border-0 rounded-0 mt-2 border-start border-dark border-opacity-10 py-md-4 px-md-4 p-2  btn-main text-uppercase text-light">
                 <label class="hamburger align-self-center">
                   <input type="checkbox" checked={open} />
                   <svg viewBox="0 0 32 32" onClick={() => setopen(!open)}>

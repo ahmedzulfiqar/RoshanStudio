@@ -17,11 +17,11 @@ const HomeSection4 = () => {
               transition={{ delay: 0.5, duration: 1 }}
               viewport={{ once: true }}
             >
-              <div className="display-3 ms-1 anton text-light text-uppercase pb-lg-4 pb-2 ">
+              <div className="display-3 ms-1 Mazzard display-5 text-light text-uppercase pb-lg-4 pb-2 ">
                 Producing videos for brands{" "}
                 <span className="text-primarys"> worldwide</span>{" "}
               </div>
-              <p className="fs-5 text-light ms-1">
+              <p className="fs-5 text-light ms-1 jakarta">
                 With a worldwide network of creative & production talent, Roshan
                 Studio is the perfect video production agency for clients
                 operating in the UK, Europe, North America & Asia.
@@ -29,7 +29,7 @@ const HomeSection4 = () => {
 
               <Link
                 to="/about"
-                className="btn ms-1 btn-lg fs-4 mt-lg-4 btn-primarys text-uppercase text-light anton px-3 py-3 rounded-1"
+                className="btn ms-1 btn-lg fs-4 mt-lg-4 btn-primarys text-uppercase text-light Mazzard px-3 py-3 rounded-1"
               >
                 Learn More About Us
               </Link>
@@ -41,11 +41,11 @@ const HomeSection4 = () => {
               transition={{ delay: 0.5, duration: 1 }}
               viewport={{ once: true }}
             >
-              <div className="display-4 anton text-light pb-lg-4 pb-3">
+              <div className="display-4 Mazzard text-light pb-lg-4 pb-3">
                 Producing videos for brands{" "}
                 <span className="text-primarys"> worldwide</span>{" "}
               </div>
-              <p className="fs-6 small text-light">
+              <p className="fs-6 small text-light jakarta">
                 With a worldwide network of creative & production talent, Roshan
                 Studio is the perfect video production agency for clients
                 operating in the UK, Europe, North America & Asia.

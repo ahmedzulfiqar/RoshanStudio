@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer class="text-center text-lg-start bg-main text-light ">
+      <footer class="text-center text-lg-start bg-main text-light  jakarta">
         <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom">
           <div className="">
             <a href="" class="me-4 text-reset">

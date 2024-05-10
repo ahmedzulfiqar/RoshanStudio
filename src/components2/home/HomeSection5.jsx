@@ -59,22 +59,22 @@ const HomeSection5 = () => {
             className="row m-0 justify-content-between "
           >
             <div className=" col-md-8 col-12 text-start d-md-block d-none  align-self-center ps-md-0">
-              <div className="display-3 anton text-primarys text-uppercase pb-lg-4 pb-2 ">
+              <div className="display-3 Mazzard text-primarys text-uppercase pb-lg-4 pb-2 ">
                 our
                 <span className="text-main"> services</span>
               </div>
-              <p className="fs-5 text-primarys">
+              <p className="fs-5 text-primarys jakarta">
                 Let's unlock the potential of your brand. Whatever kind of video
                 you're after, we’re here to create engaging content that’s the
                 perfect fit for your audience.
               </p>
             </div>{" "}
             <div className=" col-md-8 col-12 text-start d-md-none d-block  align-self-center ps-md-0">
-              <div className="display-2 anton text-primarys text-uppercase pb-lg-4 pb-3 ">
+              <div className="display-2 Mazzard text-primarys text-uppercase pb-lg-4 pb-3 ">
                 our
                 <span className="text-main"> services</span>
               </div>
-              <p className="fs-6 small text-primarys">
+              <p className="fs-6 small text-primarys jakarta" >
                 Let's unlock the potential of your brand. Whatever kind of video
                 you're after, we’re here to create engaging content that’s the
                 perfect fit for your audience.
@@ -132,8 +132,8 @@ const HomeSection5 = () => {
                             className="img-fluid  rounded-2 w-100"
                             style={{ height: "22vh" }}
                           />
-                          <h3 className="pt-lg-4 pt-4 anton ">{i.heading}</h3>
-                          <p className="pt-0">{i.text}</p>
+                          <h3 className="pt-lg-4 pt-4 Mazzard ">{i.heading}</h3>
+                          <p className="pt-0 jakarta">{i.text}</p>
                         </div>
                       </motion.div>
                     </SwiperSlide>

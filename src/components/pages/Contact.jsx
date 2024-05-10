@@ -39,21 +39,21 @@ const Contact = () => {
           <div className="row position-relative z-2 m-0">
             <div className="col-md-7 ">
               <div
-                className="text-light anton   text-uppercase display-1"
+                className="text-light Mazzard   text-uppercase display-1"
                 style={{}}
               >
                 LET'S <span className="text-main"> TALK</span>
               </div>
-              <p className="text-light py-4 fs-4">
+              <p className="text-light jakarta py-4 fs-4">
                 Connecting with us, your gateway to support and solutions. Reach
                 out, we're here to listen and assist.
               </p>
-              <a href="">
-                <div className="btn btn-lg fs-4 mt-lg-3 btn-main text-uppercase text-light anton px-3 py-2 rounded-1">
+              <a href="#lol">
+                <div className="btn btn-lg fs-4 mt-lg-4 btn-main text-uppercase text-light Mazzard px-3 py-2 rounded-1">
                   <i
-                    class="fa fa-play align-self-center pe-3 fs-3"
+                    class="fa fa-play align-self-center  pe-3 fs-3"
                     aria-hidden="true"
-                  ></i>{" "}
+                  ></i>
                   Contact US
                 </div>
               </a>
@@ -69,7 +69,10 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
-      <motion.div class="container px-md-0 px-3 ps-lg-0 ps-2 my-5 justify-content-between">
+      <motion.div
+        class="container px-md-0 px-3 ps-lg-0 ps-2 my-5 justify-content-between"
+        id="lol"
+      >
         <motion.div className="row px-4 px-md-0">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -78,7 +81,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="col-md-4  my-md-3 d-md-block d-none"
           >
-            <h5 className="fs-5 anton text-secondary">Hit The Digits</h5>
+            <h5 className="fs-5 Mazzard text-secondary">Hit The Digits</h5>
             <h1 className="display-4 anton texts text-uppercase">
               +1234567890
             </h1>
@@ -90,8 +93,8 @@ const Contact = () => {
             viewport={{ once: true }}
             className="col-md-6 my-md-3 d-md-block d-none"
           >
-            <h5 className="fs-5 anton text-secondary ">Drop us a line</h5>
-            <h1 className="display-4 anton texts text-uppercase">
+            <h5 className="fs-5 Mazzard text-secondary ">Drop us a line</h5>
+            <h1 className="display-4 Mazzard texts text-uppercase">
               RoshanStudion@gmail.com
             </h1>
           </motion.div>
@@ -104,11 +107,11 @@ const Contact = () => {
           className="row my-2 px-2 px-md-0"
         >
           <div className="col-md-4 col-12 my-1 d-md-none d-block">
-            <h5 className="fs-5 anton text-secondary">Hit The Digits</h5>
-            <h1 className=" anton text-uppercase">+1234567890</h1>
+            <h5 className="fs-5 Mazzard text-secondary">Hit The Digits</h5>
+            <h1 className=" Mazzard text-uppercase ">+1234567890</h1>
           </div>
           <div className="col-md-6 col-12 my-2 d-md-none d-block">
-            <h5 className="fs-5 anton text-secondary ">Drop us a line</h5>
+            <h5 className="fs-5 Mazzard text-secondary ">Drop us a line</h5>
             <h1 className=" anton text-uppercase">RoshanStudion@gmail.com</h1>
           </div>
         </motion.div>
@@ -123,7 +126,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="col-md-4 px-4 px-md-0"
           >
-            <h1 className="display-5 anton  text-uppercase">
+            <h1 className="display-5 Mazzard  text-uppercase">
               SEND US A MESSAGE
             </h1>
           </motion.div>

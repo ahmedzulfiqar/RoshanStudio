@@ -17,10 +17,10 @@ const HomeSection6 = () => {
                 transition={{ delay: 0.4, duration: 1 }}
                 viewport={{ once: true }}
               >
-                <div className="display-3 anton text-light text-uppercase pb-lg-4 pb-2">
+                <div className="display-3 Mazzard text-light text-uppercase pb-lg-4 pb-2">
                   Our <span className="text-dark">Values</span>
                 </div>
-                <p className="fs-5 text-light pb-4">
+                <p className="fs-5 text-light pb-4 jakarta">
                   At our video editing agency, we breathe life into your
                   stories. We believe that editing is the heartbeat of your
                   visual narrative, and we're here to make it pulse with
@@ -34,10 +34,10 @@ const HomeSection6 = () => {
                     style={{ width: "70px", height: "70px" }}
                   />
                   <div className="d-block ps-4">
-                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2">
+                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2 Mazzard-2">
                       Consistency
                     </div>
-                    <p className="fs-5 text-light pb-2">
+                    <p className="fs-5 text-light pb-2 jakarta">
                       Delivering jaw-dropping video edits, ensuring your vision
                       is brought to life with unwavering excellence.
                     </p>{" "}
@@ -51,10 +51,10 @@ const HomeSection6 = () => {
                     style={{ width: "70px", height: "70px" }}
                   />
                   <div className="d-block ps-4">
-                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2">
+                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2  Mazzard-2">
                       Creativity
                     </div>
-                    <p className="fs-5 text-light pb-2">
+                    <p className="fs-5 text-light pb-2 jakarta">
                       Infusing innovation into every frame, expertly weaving
                       enduring and unforgettable visual narratives.
                     </p>{" "}
@@ -68,10 +68,10 @@ const HomeSection6 = () => {
                     style={{ width: "70px", height: "70px" }}
                   />
                   <div className="d-block ps-4">
-                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2">
+                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2  Mazzard-2">
                       Diverse Skillset
                     </div>
-                    <p className="fs-5 text-light pb-2">
+                    <p className="fs-5 text-light pb-2 jakarta">
                       Proficient in various styles and genres, turning your
                       ideas into captivating videos. Versatility is our
                       strength.
@@ -87,10 +87,10 @@ const HomeSection6 = () => {
                 transition={{ delay: 0.4, duration: 1 }}
                 viewport={{ once: true }}
               >
-                <div className="display-2 anton text-light pb-lg-4 pb-3  text-uppercase">
+                <div className="display-2 Mazzard text-light pb-lg-4 pb-3  text-uppercase">
                   Our <span className="text-primarys">Values</span>
                 </div>
-                <p className="fs-6 small text-light pb-4">
+                <p className="fs-6 small text-light pb-4 jakarta">
                   At our video editing agency, we breathe life into your
                   stories. We believe that editing is the heartbeat of your
                   visual narrative, and we're here to make it pulse with
@@ -104,10 +104,10 @@ const HomeSection6 = () => {
                     style={{ width: "50px", height: "50px" }}
                   />
                   <div className="d-block ps-4">
-                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2">
+                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2 Mazzard-2">
                       Consistency
                     </div>
-                    <p className="-6 small text-light pb-2">
+                    <p className="-6 small text-light pb-2 jakarta">
                       Delivering jaw-dropping video edits, ensuring your vision
                       is brought to life with unwavering excellence.
                     </p>{" "}
@@ -121,10 +121,10 @@ const HomeSection6 = () => {
                     style={{ width: "50px", height: "50px" }}
                   />
                   <div className="d-block ps-4">
-                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2">
+                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2 Mazzard-2">
                       Creativity
                     </div>
-                    <p className="-6 small text-light pb-2">
+                    <p className="-6 small text-light pb-2 jakarta">
                       Infusing innovation into every frame, expertly weaving
                       enduring and unforgettable visual narratives.
                     </p>{" "}
@@ -138,10 +138,10 @@ const HomeSection6 = () => {
                     style={{ width: "50px", height: "50px" }}
                   />
                   <div className="d-block ps-4">
-                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2">
+                    <div className="fs-4 anton text-light text- pb-lg-2 pb-2 Mazzard-2">
                       Diverse Skillset
                     </div>
-                    <p className="-6 small text-light pb-2">
+                    <p className="-6 small text-light pb-2 jakarta">
                       Proficient in various styles and genres, turning your
                       ideas into captivating videos. Versatility is our
                       strength.

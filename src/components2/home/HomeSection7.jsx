@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import portfoliodata from "../../components/data/portfoliodata";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
-import OpenPopup from "../portfolio/OpenPopup";
-import Videocard from "../../components/atoms/Videocard";
 
 const HomeSection7 = () => {
   const scrollerRef = useRef(null);
@@ -65,10 +62,10 @@ const HomeSection7 = () => {
                 transition={{ delay: 0.4, duration: 0.3 }}
                 viewport={{ once: true }}
               >
-                <div className="display-4 anton text-primarys text-uppercase pb-lg-3 pb-2">
+                <div className="display-3 Mazzard text-primarys text-uppercase pb-lg-3 pb-2">
                   <span className="text-main">Portfolio</span>
                 </div>
-                <p className="display-5 text-uppercase  fw-bolder text-primarys pb-2">
+                <p className="display-6 text-uppercase Mazzard fw-bolder text-primarys pb-2">
                   Seeing is Believing:
                   <br />
                   <span className="text-lessmain">
@@ -84,10 +81,10 @@ const HomeSection7 = () => {
                 transition={{ delay: 0.4, duration: 0.3 }}
                 viewport={{ once: true }}
               >
-                <div className="display-2 anton text-primarys text-uppercase pb-lg-3 pb-3">
+                <div className="display-2 Mazzard text-primarys text-uppercase pb-lg-3 pb-3">
                   <span className="text-main">Portfolio</span>
                 </div>
-                <p className="fs-3 text-uppercase  fw-bolder text-primarys pb-2">
+                <p className="fs-3 text-uppercase Mazzard fw-bolder text-primarys pb-2">
                   Seeing is Believing:
                   <span className="text-lessmain">
                     Dive into Our Editing Portfolio
@@ -105,8 +102,8 @@ const HomeSection7 = () => {
                     key={i.name}
                     className={
                       slectedcetagory === i.name
-                        ? " text-main px-lg-4 px-2 fs-4 pointer"
-                        : " text- px-lg-4 px-2 fs-4 pointer"
+                        ? " text-main px-lg-4 px-2 fs-4 pointer Mazzard-2"
+                        : " text- px-lg-4 px-2 fs-4 pointer Mazzard-2"
                     }
                     style={{ whiteSpace: "nowrap", width: "max-content" }}
                     onClick={() => {
@@ -135,8 +132,8 @@ const HomeSection7 = () => {
                     key={i.name}
                     className={
                       slectedcetagory === i.name
-                        ? " text-main px-lg-4 px-2 fs-6 pointer"
-                        : " text- px-lg-4 px-2 fs-6 pointer"
+                        ? " text-main px-lg-4 px-1 fs-6 pointer  text-uppercase"
+                        : " text- px-lg-4 px-1 fs-6 pointer  text-uppercase"
                     }
                     style={{ whiteSpace: "nowrap", width: "max-content" }}
                     onClick={() => {
@@ -159,8 +156,46 @@ const HomeSection7 = () => {
               <div className="row m-0 mt-md-5 mt-4">
                 {portfoliodata
                   .filter((data) => data.name === slectedcetagory)[0]
-                  .videos.map((video) => {
-                    return <Videocard video={video} />;
+                  .videos.map((video, index) => {
+                    // Render two videos per row
+                    if (index % 2 === 0) {
+                      return (
+                        <div key={index} className="row m-0 mb-4">
+                          <div className="col-md-6">
+                            <iframe
+                              width="100%"
+                              height="450"
+                              src={video.link}
+                              title="YouTube video player"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                              className="d-md-block"
+                            ></iframe>
+                          </div>
+                          {/* Check if there is another video available */}
+                          {index + 1 <
+                            portfoliodata.filter(
+                              (data) => data.name === slectedcetagory
+                            )[0].videos.length && (
+                            <div className="col-md-6">
+                              <iframe
+                                width="100%"
+                                height="450"
+                                src={
+                                  portfoliodata.filter(
+                                    (data) => data.name === slectedcetagory
+                                  )[0].videos[index + 1].link
+                                }
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="d-md-block"
+                              ></iframe>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    }
                   })}
               </div>
             </div>

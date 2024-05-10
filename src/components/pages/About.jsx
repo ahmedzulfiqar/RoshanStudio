@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const [open, setopen] = useState(false);
   return (
     <>
       <div
@@ -28,23 +29,72 @@ const About = () => {
           <div className="row position-relative z-2 m-0">
             <div className="col-md-7 ">
               <div
-                className="text-light anton   text-uppercase display-1"
+                className="text-light Mazzard   text-uppercase display-1"
                 style={{}}
               >
-                About <span className="text-main"> Roshan Studio</span>
+                About <br /> <span className="text-main"> Roshan Studio</span>
               </div>
-              <p className="text-light py-4 fs-4">
+              <p className="text-light py-4 fs-4 jakarta">
                 Where the magic happens. From concepts to final video edits,
                 we're talking bold ideas that deliver real results. Ready for
                 remarkable
               </p>
-              <div className="btn btn-lg fs-4 mt-lg-3 btn-main text-uppercase text-light anton px-3 py-3 rounded-1">
+              <motion.div
+                className="btn btn-lg fs-4 mt-lg-4 btn-main text-uppercase text-light anton px-3 py-3 rounded-1"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.5, duration: 1 }}
+                onClick={() => setopen(!open)}
+              >
                 <i
-                  class="fa fa-play align-self-center pe-3 fs-3"
+                  className="fa fa-play align-self-center pe-3 fs-3 jakarta"
                   aria-hidden="true"
                 ></i>{" "}
                 play ShowReel
-              </div>
+              </motion.div>
+              {open && (
+                <>
+                  <button
+                    className="close-button position-absolute z-3 d-md-block d-none"
+                    onClick={() => setopen(false)}
+                  >
+                    <i className="fa fa-times z-3"></i>
+                  </button>
+                  <div className="video-container z-1 d-flex justify-content-center align-items-center">
+                    <iframe
+                      width="100%"
+                      height="400"
+                      src="https://www.youtube.com/embed/NcBjx_eyvxc?si=8IcboviRNbONyyD0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      className="d-md-block d-none"
+                    ></iframe>
+                  </div>{" "}
+                  <button
+                    className="close-buttons position-absolute d-md-none z-3"
+                    style={{top:"10px"}}
+                    onClick={() => setopen(false)}
+                  >
+                    <i className="fa fa-times "></i>
+                  </button> 
+                  <div className="video-container d-flex justify-content-center align-items-center w-100">
+                   <iframe
+                      width="100%" // Change width to 100%
+                      height="315"
+                      src="https://www.youtube.com/embed/NcBjx_eyvxc?si=8IcboviRNbONyyD0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      className="d-md-none d-block z-2"
+                    ></iframe>
+                  </div>
+                </>
+              )}
               <motion.img
                 src="https://www.venturevideos.com/hs-fs/hubfs/Untitled%20design%20(39).png?width=1080&height=1080&name=Untitled%20design%20(39).png"
                 alt=""
@@ -72,19 +122,19 @@ const About = () => {
               viewport={{ once: true }}
               className="col-lg-6 col-12 text-start d-md-block d-none align-self-center"
             >
-              <div className="display-2 anton text-uppercase text-primarys pb-lg-4 pb-2">
+              <div className="display-2 Mazzard text-uppercase text-primarys pb-lg-4 pb-2">
                 About Us
               </div>
-              <p className="fs-5">
+              <p className="fs-5 jakarta">
                 Make an impact with Roshan Studio the go-to video production
                 agency for brands.
               </p>
-              <p className="fs-5">
+              <p className="fs-5 jakarta">
                 We work with fast growing start ups and enterprise brands around
                 the globe who want to win new customers with the power of video
                 marketing.
               </p>
-              <p className="fs-5">
+              <p className="fs-5 jakarta">
                 At Roshan Studio, we never settle for average, we want you to
                 shine brightly and help you change the world!
               </p>{" "}
@@ -102,19 +152,19 @@ const About = () => {
               viewport={{ once: true }}
               className="col-lg-6 col-12 mt-md-3 py-5 text-start d-md-none d-block"
             >
-              <div className="display-5 anton text-primarys pb-lg-4 pb-3">
+              <div className="display-5 Mazzard text-primarys pb-lg-4 pb-3">
                 A NEW KIND OF VIDEO PRODUCTION AGENCY
               </div>
-              <p className="fs-6 small">
+              <p className="fs-6 small jakarta">
                 Make an impact with Roshan Studio the go-to video production
                 agency for brands.
               </p>
-              <p className="fs-6 small">
+              <p className="fs-6 small jakarta">
                 We work with fast growing start ups and enterprise brands around
                 the globe who want to win new customers with the power of video
                 marketing.
               </p>
-              <p className="fs-6 small">
+              <p className="fs-6 small jakarta">
                 At Venture, we never settle for average, we want you to shine
                 brightly and help you change the world!
               </p>{" "}
@@ -144,7 +194,7 @@ const About = () => {
                 <div className="btn btn-main py-3 px-4 rounded-0">
                   <i class="fa fa-play text-light fs-3" aria-hidden="true"></i>
                 </div>
-                <div className="ps-3 fs-5 align-self-center ">
+                <div className="ps-3 fs-5 align-self-center Mazzard ">
                   LEARN MORE ABOUT{" "}
                   <span className="text-main">ROSHAN STUDIO</span>
                 </div>

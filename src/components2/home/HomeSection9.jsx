@@ -18,10 +18,10 @@ const HomeSection9 = () => {
                 transition={{ delay: 0.5, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <div className="display-3 anton text-dark text-uppercase pb-lg-4 pb-2 ">
+                <div className="display-4  text-dark text-uppercase pb-lg-4 pb-2 Mazzard">
                   Getting started is a<span className="text-main"> breeze</span>
                 </div>
-                <p className="fs-5 text-dark">
+                <p className="fs-5 text-dark jakarta">
                   Over the last 18 years we've developed a fully managed end to
                   end video production process that not only delivers amazing
                   results, it also makes us exceptionally easy to work with.
@@ -35,10 +35,10 @@ const HomeSection9 = () => {
                 transition={{ delay: 0.5, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <div className="display-2 anton text-dark text-uppercase pb-lg-4 pb-2 ">
+                <div className="display-2 Mazzard text-dark text-uppercase pb-lg-4 pb-2 ">
                   Getting started is a<span className="text-main"> breeze</span>
                 </div>
-                <p className="fs-6 small text-dark">
+                <p className="fs-6 small text-dark jakarta">
                   Over the last 18 years we've developed a fully managed end to
                   end video production process that not only delivers amazing
                   results, it also makes us exceptionally easy to work with.
@@ -60,10 +60,10 @@ const HomeSection9 = () => {
                     <h4>
                       <i className="fa fa-thumbs-up text-info display-4 mb-2"></i>
                     </h4>
-                    <h4 className="text-info text-uppercase fw-bold">
+                    <h4 className="text-info text-uppercase fw-bold jakarta">
                       Project kick-off
                     </h4>
-                    <p className="text-dark ">
+                    <p className="text-dark jakarta">
                       Let's commence your onboarding session with an in-depth
                       discussion regarding the proposed schedule. Following
                       that, we'll delve into outlining each step. We'll lay out
@@ -84,10 +84,10 @@ const HomeSection9 = () => {
                     <h4>
                       <i className="fa fa-phone text-primary display-4 mb-2"></i>
                     </h4>
-                    <h4 className="text-uppercase  text-primary fw-bold">
+                    <h4 className="text-uppercase  text-primary fw-bold jakarta">
                       Book a call
                     </h4>
-                    <p className="text-dark">
+                    <p className="text-dark jakarta">
                       It all starts with a chat. As a strategic partner, we'll
                       learn all about you, your business, your product offering,
                       your target customer, your marketing priorities and your
@@ -108,13 +108,13 @@ const HomeSection9 = () => {
                     <h4>
                       <i className="fa fa-newspaper text-danger display-4 mb-2"></i>
                     </h4>
-                    <h4 className="text-uppercase  text-danger fw-bold">
+                    <h4 className="text-uppercase  text-danger fw-bold jakarta">
                       Creative presentation
                     </h4>
-                    <p className="text-dark">
-                      We'll present our ideas to your team, taking you on a
+                    <p className="text-dark jakarta">
+                      We will present our ideas to your team, taking you on a
                       journey through our creative vision for your project.
-                      Here's where you'll see initial concepts for how your
+                      Here's where you will see initial concepts for how your
                       video might look, sound and feel.
                     </p>
                   </div>
@@ -129,12 +129,13 @@ const HomeSection9 = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <Link
-                to="/contact"
-                class="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1"
+              <a
+                href="https://calendly.com/roshanstudio/30min"
+                class="btn btn-lg fs-5 mt-lg-4 mt-2 btn-main text-uppercase text-light jakarta px-3 py-3 rounded-1"
+                target="_blank"
               >
-                CONTACT US
-              </Link>
+                booK A CALL
+              </a>
             </motion.div>
           </div>
         </div>

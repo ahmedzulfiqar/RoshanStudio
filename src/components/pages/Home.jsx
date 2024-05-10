@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HomeSection2 from "../../components2/home/HomeSection2";
 import HomeSection3 from "../../components2/home/HomeSection3";
 import HomeSection4 from "../../components2/home/HomeSection4";
@@ -12,6 +12,7 @@ import HomeSection11 from "../../components2/home/HomeSection11";
 import { motion } from "framer-motion";
 
 function Home() {
+  const [open, setopen] = useState(false);
   return (
     <>
       <motion.div
@@ -31,34 +32,78 @@ function Home() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.5, duration: 1 }}
             >
-              <div className="text-light anton display-1">
+              <div className="text-light Mazzard display-3">
                 <motion.span className="text-light">
-                  VIDEO PRODUCTION FOR
+                  Video Editing Services for
                 </motion.span>{" "}
-                <span className="text-main"> BRANDS</span>
+                <span className="text-main"> Content Creators</span>
               </div>
               <motion.p
-                className="text-light py-4 fs-4"
+                className="text-light py-4 fs-4 jakarta"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
               >
-                Roshan Studio is a full-service video production agency that
-                helps brands to win new customers with creative content &
-                campaigns
+                Roshan studio is a post-production agency who provides video
+                editing services to content creators
               </motion.p>
               <motion.div
                 className="btn btn-lg fs-4 mt-lg-2 btn-main text-uppercase text-light anton px-3 py-3 rounded-1"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
+                onClick={() => setopen(!open)}
               >
                 <i
-                  className="fa fa-play align-self-center pe-3 fs-3"
+                  className="fa fa-play align-self-center pe-3 fs-3 jakarta"
                   aria-hidden="true"
                 ></i>{" "}
                 play ShowReel
               </motion.div>
+              {open && (
+                <>
+                  <button
+                    className="close-button position-absolute z-3 d-md-block d-none"
+                    onClick={() => setopen(false)}
+                  >
+                    <i className="fa fa-times z-3"></i>
+                  </button>
+                  <div className="video-container z-1 d-flex justify-content-center align-items-center">
+                    <iframe
+                      width="100%"
+                      height="400"
+                      src="https://www.youtube.com/embed/NcBjx_eyvxc?si=8IcboviRNbONyyD0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      className="d-md-block d-none"
+                    ></iframe>
+                  </div>{" "}
+                  <button
+                    className="close-buttons position-absolute d-md-none z-3"
+                    style={{top:"10px"}}
+                    onClick={() => setopen(false)}
+                  >
+                    <i className="fa fa-times "></i>
+                  </button> 
+                  <div className="video-container d-flex justify-content-center align-items-center w-100">
+                   <iframe
+                      width="100%" // Change width to 100%
+                      height="315"
+                      src="https://www.youtube.com/embed/NcBjx_eyvxc?si=8IcboviRNbONyyD0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      className="d-md-none d-block z-2"
+                    ></iframe>
+                  </div>
+                </>
+              )}
+
               <motion.img
                 src="https://www.venturevideos.com/hs-fs/hubfs/Untitled%20design%20(39).png?width=1080&height=1080&name=Untitled%20design%20(39).png"
                 alt=""

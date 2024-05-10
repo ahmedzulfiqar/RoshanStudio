@@ -17,11 +17,11 @@ const HomeSection8 = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 1 }}
               >
-                <div className="display-3 anton text-light text-uppercase pb-lg-4 pb-2 ">
+                <div className="display-3  text-light text-uppercase pb-lg-4 pb-2 Mazzard">
                   why to chose
                   <span className="text-dark"> roshan studio</span>
                 </div>
-                <p className="fs-5 text-light">
+                <p className="fs-5 text-light jakarta">
                   At our video editing agency, we breathe life into your
                   stories. We believe that editing is the heartbeat of your
                   visual narrative, and we're here to make it pulse with
@@ -34,13 +34,13 @@ const HomeSection8 = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.5, duration: 1  }}
+                transition={{ delay: 0.5, duration: 1 }}
               >
-                <div className="display-2 anton text-light text-uppercase pb-lg-4 pb-2 ">
+                <div className="display-2  text-light text-uppercase pb-lg-4 pb-2  Mazzard">
                   why to chose
                   <span className="text-dark"> roshan studio</span>
                 </div>
-                <p className="fs-6 small text-light">
+                <p className="fs-6 small text-light jakarta">
                   At our video editing agency, we breathe life into your
                   stories. We believe that editing is the heartbeat of your
                   visual narrative, and we're here to make it pulse with
@@ -56,12 +56,17 @@ const HomeSection8 = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.4, duration: 1  }}
+                  transition={{ delay: 0.4, duration: 1 }}
                 >
                   <div className="rounded-lg rounded bg-translucent my-2   text-center p-md-5 py-4 px-3">
                     <div className="card-body">
-                      <h1 className="text-danger display-5 fw-bold">900+</h1>
-                      <h5 className="text-light ">Quality Checks</h5>
+                      <h1 className="text-white display-5 fw-bold">900+</h1>
+                      <h5
+                        className="text-dark "
+                        style={{ fontFamily: "ttf b" }}
+                      >
+                        Quality Checks
+                      </h5>
                     </div>
                   </div>
                 </motion.div>
@@ -71,12 +76,17 @@ const HomeSection8 = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: .4, duration: 1  }}
+                  transition={{ delay: 0.4, duration: 1 }}
                 >
                   <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                     <div className="card-body">
-                      <h1 className="display-5 text-primary fw-bold">15+</h1>
-                      <h5 className="text-light">Happy Clients</h5>
+                      <h1 className="display-5 text-white fw-bold">15+</h1>
+                      <h5
+                        className="text-dark "
+                        style={{ fontFamily: "ttf b" }}
+                      >
+                        Happy Clients
+                      </h5>
                     </div>
                   </div>
                 </motion.div>
@@ -86,12 +96,17 @@ const HomeSection8 = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: .4, duration: 1  }}
+                  transition={{ delay: 0.4, duration: 1 }}
                 >
                   <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                     <div className="card-body">
-                      <h1 className="display-5 text-dark fw-bold">350+</h1>
-                      <h5 className="text-light">Projects Completed</h5>
+                      <h1 className="display-5 text-white fw-bold">350+</h1>
+                      <h5
+                        className="text-dark "
+                        style={{ fontFamily: "ttf b" }}
+                      >
+                        Projects Completed
+                      </h5>
                     </div>
                   </div>
                 </motion.div>
@@ -101,12 +116,17 @@ const HomeSection8 = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: .4, duration: 1  }}
+                  transition={{ delay: 0.4, duration: 1 }}
                 >
                   <div className="rounded-lg rounded bg-translucent my-2  text-center p-md-5 py-4 px-3">
                     <div className="card-body">
-                      <h1 className="display-5 fw-bold text-info">100+</h1>
-                      <h5 className="text-light">Team Members</h5>
+                      <h1 className="display-5 fw-bold text-white">100+</h1>
+                      <h5
+                        className="text-dark "
+                        style={{ fontFamily: "ttf b" }}
+                      >
+                        Team Members
+                      </h5>
                     </div>
                   </div>
                 </motion.div>

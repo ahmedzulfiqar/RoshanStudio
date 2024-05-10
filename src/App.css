@@ -112,7 +112,7 @@ i {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgb(30, 30, 30) 20%,
+    rgb(30, 30, 30) 25%,
     rgba(28, 28, 28, 0) 100%
   );
 }
@@ -129,6 +129,12 @@ i {
 }
 .arrow {
   margin-top: -6vw;
+  margin-left: -50px;
+  padding: 4.4vw;
+}.arrows {
+  margin-top: -6.5vw;
+  width: 350px;
+  height: 250px;
   margin-left: -50px;
   padding: 4.4vw;
 }
@@ -158,6 +164,7 @@ i {
     margin-top: -4vw;
     margin-left: 10px;
     padding: 1.5vw;
+    z-index: 1 !important;
   }
   .sliderr {
     padding-top: 30px !important;

@@ -21,7 +21,7 @@ const HomeSection11 = () => {
               />
             </h2>
             <motion.div
-              className="display-5 anton text-primarys pb-lg-4 pb-2"
+              className="display-6 Mazzard text-primarys pb-lg-4 pb-2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
@@ -31,7 +31,7 @@ const HomeSection11 = () => {
               <span className="text-main"> Free Consultation</span>, Awaits!
             </motion.div>
             <p
-              className="fs-5"
+              className="fs-5 jakarta"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
@@ -54,7 +54,7 @@ const HomeSection11 = () => {
                     className="img-fluid align-self-center "
                   />
                 </h2>{" "}
-                <h5 className="fs-4 text-black fw-bolder ps-3 align-self-center">
+                <h5 className="fs-4 text-black fw-bolder jakarta ps-3 align-self-center">
                   Strategic Roadmap
                 </h5>
               </div>
@@ -66,7 +66,7 @@ const HomeSection11 = () => {
                     className="img-fluid align-self-center "
                   />
                 </h2>{" "}
-                <h5 className="fs-4 text-black fw-bolder ps-3 align-self-center">
+                <h5 className="fs-4 text-black fw-bolder jakarta ps-3 align-self-center">
                   Strategic Roadmap
                 </h5>
               </div>
@@ -81,7 +81,7 @@ const HomeSection11 = () => {
               />
             </h2>
             <motion.div
-              className="display-3 anton text-primarys pb-lg-4 pb-2"
+              className="display-5 Mazzard text-primarys pb-lg-4 pb-2"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
@@ -90,7 +90,7 @@ const HomeSection11 = () => {
               <span className="text-main"> Free Consultation</span>, Awaits!
             </motion.div>
             <p
-              className=""
+              className="jakarta"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}

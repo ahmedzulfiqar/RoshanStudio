@@ -75,7 +75,7 @@ const HomeSection2 = () => {
           <div className="row m-0 ">
             <div className="col-12 py-3  ">
               <motion.div
-                className="display-5 anton text-light  mb-lg-3 mb-2"
+                className="display-5 Mazzard text-light  mb-lg-3 mb-2 "
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 1 }}

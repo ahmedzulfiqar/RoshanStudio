@@ -32,7 +32,7 @@ const HomeSection10 = () => {
         className="container px-0 ps-lg-0 ps-2 py-5"
       >
         <div className="row m-0 justify-content-between">
-          <div className="col-md-8 col-12 text-start d-md-block d-none align-self-center ps-md-0">
+          <div className="col-md-8 col-12 text-start d-md-block d-none align-self-center ps-md-0 Mazzard">
             <p className="fs-2 text-uppercase fw-bolder text-light">
               Testimonials
             </p>
@@ -102,9 +102,9 @@ const HomeSection10 = () => {
                           }}
                         />
                       </h2>
-                      <h5 className="card-title anton">SN-Team</h5>
-                      <p className="card-text fw-semibold">Ed-Tech Company</p>
-                      <p className="fs-6">
+                      <h5 className="card-title Mazzard">SN-Team</h5>
+                      <p className="card-text Mazzard-2 fw-semibold">Ed-Tech Company</p>
+                      <p className="fs-6 jakarta">
                         "MarkSoin really helped us creating engaging and
                         effective videos. Their mastery of video editing and
                         ability to capture the attention of our target audience
