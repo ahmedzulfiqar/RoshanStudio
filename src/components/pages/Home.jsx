@@ -30,7 +30,8 @@ function Home() {
               className="col-md-7"
               initial={{ x: -30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 1.5, duration: 1}}
+              transition={{ delay: 1.5, duration: 1 }}
+              viewport={{ once: true }}
             >
               <div className="text-light Mazzard display-3">
                 <motion.span className="text-light">
@@ -43,6 +44,7 @@ function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
+                viewport={{ once: true }}
               >
                 Roshan studio is a post-production agency who provides video
                 editing services to content creators
@@ -53,6 +55,7 @@ function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
                 onClick={() => setopen(!open)}
+                viewport={{ once: true }}
               >
                 <i
                   className="fa fa-play align-self-center pe-3 fs-3 jakarta"
@@ -83,13 +86,13 @@ function Home() {
                   </div>{" "}
                   <button
                     className="close-buttons position-absolute d-md-none z-3"
-                    style={{top:"10px"}}
+                    style={{ top: "10px" }}
                     onClick={() => setopen(false)}
                   >
                     <i className="fa fa-times "></i>
-                  </button> 
+                  </button>
                   <div className="video-container d-flex justify-content-center align-items-center w-100">
-                   <iframe
+                    <iframe
                       width="100%" // Change width to 100%
                       height="315"
                       src="https://www.youtube.com/embed/NcBjx_eyvxc?si=8IcboviRNbONyyD0"
@@ -111,6 +114,7 @@ function Home() {
                 initial={{ x: 30, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 1.2 }}
+                viewport={{ once: true }}
               />
             </motion.div>
           </div>
