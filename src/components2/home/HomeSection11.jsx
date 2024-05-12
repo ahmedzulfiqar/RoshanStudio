@@ -102,27 +102,23 @@ const HomeSection11 = () => {
             </p>
             <div className="row   my-4 my-md-5">
               <div className="col-12 col-md-5 d-flex">
-                <h2>
-                  <img
-                    src="https://marksoln.in/assets/img/icon/consultation_icon01.png"
-                    alt=""
-                    className="img-fluid align-self-center w-75 "
-                  />
-                </h2>{" "}
-                <h5 className="fs-4 text-black fw-bolder ps-1 align-self-center">
+                <img
+                  src="https://freepngimg.com/thumb/logo/73515-roadmap-sitewise-digital-creative-technology-road-icon.png"
+                  className="img-fluid w-25"
+                  alt=""
+                />
+                <h5 className="fs-4 text-main Mazzard fw-bolder mt-2 jakarta ps-3 align-self-center">
                   Strategic Roadmap
                 </h5>
               </div>
-              <div className="col-12 col-md-5 d-flex">
-                <h2>
-                  <img
-                    src="https://marksoln.in/assets/img/icon/consultation_icon01.png"
-                    alt=""
-                    className="img-fluid align-self-center w-75 "
-                  />
-                </h2>{" "}
-                <h5 className="fs-4 text-black fw-bolder ps-1 align-self-center">
-                  Strategic Roadmap
+              <div className="col-12 col-md-5 d-flex mt-3">
+              <img
+                  src="https://cdn2.iconfinder.com/data/icons/business-272/64/STATISTICS-1024.png"
+                  className="img-fluid w-25"
+                  alt=""
+                />
+                <h5 className="fs-4 text-main Mazzard fw-bolder jakarta ps-3 align-self-center">
+                 Analysis
                 </h5>
               </div>
             </div>
