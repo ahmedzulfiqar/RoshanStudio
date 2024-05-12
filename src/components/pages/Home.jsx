@@ -30,7 +30,7 @@ function Home() {
               className="col-md-7"
               initial={{ x: -30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 4, duration: 1.2 }}
+              transition={{ delay: 1.5, duration: 1}}
             >
               <div className="text-light Mazzard display-3">
                 <motion.span className="text-light">
@@ -110,7 +110,7 @@ function Home() {
                 className="img-fluid position-absolute w-25 arrow"
                 initial={{ x: 30, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 4.2, duration: 1.2 }}
+                transition={{ delay: 1, duration: 1.2 }}
               />
             </motion.div>
           </div>
