@@ -8,37 +8,21 @@ import { Pagination } from "swiper/modules";
 const HomeSection5 = () => {
   const card_data = [
     {
-      imgs: "https://www.venturevideos.com/hubfs/explainer%20video%201.webp",
       heading: "Explainer Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
+      embeddedVideoUrl: "https://www.youtube.com/embed/1Y5ibg1I10E?si=qi1Bwt1MMT_0jucf",
     },
     {
-      imgs: "https://www.venturevideos.com/hubfs/Billy%20thumbnails/BDO%20-%20Lets%20talk%20about%20race%20%280-00-02-17%29.webp",
       heading: "Promotional Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
+      embeddedVideoUrl: "https://www.youtube.com/embed/z2TmN5Epe8Q?si=IW-FByor-lIOK2jJ",
     },
     {
-      imgs: "https://www.venturevideos.com/hubfs/Optimised%20website%20images/albert%20optimised.webp",
       heading: "Animated Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/explainer%20video%201.webp",
-      heading: "Explainer Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/Billy%20thumbnails/BDO%20-%20Lets%20talk%20about%20race%20%280-00-02-17%29.webp",
-      heading: "Promotional Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/Optimised%20website%20images/albert%20optimised.webp",
-      heading: "Animated Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
+      embeddedVideoUrl: "https://www.youtube.com/embed/G0LLmkUQZxQ?si=kAvCvvL6iKTfbeHX",
     },
   ];
-
   const variants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: 50 },
@@ -74,7 +58,7 @@ const HomeSection5 = () => {
                 our
                 <span className="text-main"> services</span>
               </div>
-              <p className="fs-6 small text-primarys jakarta" >
+              <p className="fs-6 small text-primarys jakarta">
                 Let's unlock the potential of your brand. Whatever kind of video
                 you're after, we’re here to create engaging content that’s the
                 perfect fit for your audience.
@@ -116,29 +100,32 @@ const HomeSection5 = () => {
                   },
                 }}
               >
-                {card_data.map((i) => {
-                  return (
-                    <SwiperSlide>
-                      <motion.div
-                        className="row m-0"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.4, duration: 1 }}
-                      >
-                        <div className="col-12 p-0 ">
-                          <img
-                            src={i.imgs}
-                            className="img-fluid  rounded-2 w-100"
-                            style={{ height: "22vh" }}
-                          />
-                          <h3 className="pt-lg-4 pt-4 Mazzard ">{i.heading}</h3>
-                          <p className="pt-0 jakarta">{i.text}</p>
-                        </div>
-                      </motion.div>
-                    </SwiperSlide>
-                  );
-                })}
+                {card_data.map((item) => (
+                  <SwiperSlide key={item.heading}>
+                    <motion.div
+                      className="row m-0"
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.4, duration: 1 }}
+                    >
+                      <div className="col-12 p-0">
+                        {/* Replace img tag with iframe tag */}
+                        <iframe
+                          title={item.heading}
+                          width="100%"
+                          height="200"
+                          src={item.embeddedVideoUrl}
+                          frameBorder="0"
+                          allow="autoplay; encrypted-media"
+                          allowFullScreen
+                        ></iframe>
+                        <h3 className="pt-lg-4 pt-4 Mazzard">{item.heading}</h3>
+                        <p className="pt-0 jakarta">{item.text}</p>
+                      </div>
+                    </motion.div>
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>

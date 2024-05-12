@@ -4,64 +4,22 @@ import { motion } from "framer-motion";
 const Services = () => {
   const card_data = [
     {
-      imgs: "https://www.venturevideos.com/hubfs/explainer%20video%201.webp",
       heading: "Explainer Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
+      embeddedVideoUrl:
+        "https://www.youtube.com/embed/1Y5ibg1I10E?si=qi1Bwt1MMT_0jucf",
     },
     {
-      imgs: "https://www.venturevideos.com/hubfs/Billy%20thumbnails/BDO%20-%20Lets%20talk%20about%20race%20%280-00-02-17%29.webp",
       heading: "Promotional Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
+      embeddedVideoUrl:
+        "https://www.youtube.com/embed/z2TmN5Epe8Q?si=IW-FByor-lIOK2jJ",
     },
     {
-      imgs: "https://www.venturevideos.com/hubfs/Optimised%20website%20images/albert%20optimised.webp",
       heading: "Animated Video",
       text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/explainer%20video%201.webp",
-      heading: "Explainer Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/Billy%20thumbnails/BDO%20-%20Lets%20talk%20about%20race%20%280-00-02-17%29.webp",
-      heading: "Promotional Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/Optimised%20website%20images/albert%20optimised.webp",
-      heading: "Animated Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/explainer%20video%201.webp",
-      heading: "Explainer Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/Billy%20thumbnails/BDO%20-%20Lets%20talk%20about%20race%20%280-00-02-17%29.webp",
-      heading: "Promotional Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/Optimised%20website%20images/albert%20optimised.webp",
-      heading: "Animated Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/explainer%20video%201.webp",
-      heading: "Explainer Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/Billy%20thumbnails/BDO%20-%20Lets%20talk%20about%20race%20%280-00-02-17%29.webp",
-      heading: "Promotional Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
-    },
-    {
-      imgs: "https://www.venturevideos.com/hubfs/Optimised%20website%20images/albert%20optimised.webp",
-      heading: "Animated Video",
-      text: "Simplify the complex with stunning explainer videos that get people excited.",
+      embeddedVideoUrl:
+        "https://www.youtube.com/embed/G0LLmkUQZxQ?si=kAvCvvL6iKTfbeHX",
     },
   ];
   const [open, setopen] = useState(false);
@@ -94,7 +52,7 @@ const Services = () => {
                 className="text-light py-4 fs-4 jakarta"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.6}}
+                transition={{ delay: 0.5, duration: 0.6 }}
               >
                 Where the magic happens. From concepts to final video edits,
                 we're talking bold ideas that deliver real results. Ready for
@@ -136,13 +94,13 @@ const Services = () => {
                   </div>{" "}
                   <button
                     className="close-buttons position-absolute d-md-none z-3"
-                    style={{top:"10px"}}
+                    style={{ top: "10px" }}
                     onClick={() => setopen(false)}
                   >
                     <i className="fa fa-times "></i>
-                  </button> 
+                  </button>
                   <div className="video-container d-flex justify-content-center align-items-center w-100">
-                   <iframe
+                    <iframe
                       width="100%" // Change width to 100%
                       height="315"
                       src="https://www.youtube.com/embed/NcBjx_eyvxc?si=8IcboviRNbONyyD0"
@@ -168,34 +126,38 @@ const Services = () => {
           </div>
         </motion.div>
       </div>
-      <div
-        className="border -main d-flex align-items-center position-relative "
-        style={{ minHeight: "75vh" }}
-      >
-        <div class="container py-5 mt-md-3 mt-0">
-          <div className="row justify-content-center mt-md-4 mt-2 mx-0 text-start">
-            <div className="row justify-content-center pt-2">
-              {card_data.map((i) => {
-                return (
-                  <motion.div
-                    className="col-lg-4 col-md-6 col-12 m-0 my-md-4 my-2"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5, duration: 0.3 }}
-                  >
-                    <div className="col-12 p-0 ">
-                      <img
-                        src={i.imgs}
-                        className="img-fluid  rounded-2 w-100"
-                        style={{ height: "22vh" }}
-                      />
-                      <h3 className="pt-lg-4 pt-4 Mazzard fs-3 ">{i.heading}</h3>
-                      <p className="pt-0 jakarta">{i.text}</p>
+      <div className="border -main d-flex align-items-center position-relative ">
+        <div class="container py-5  mt-0">
+          <div className="container py-5  mt-0">
+            <div className="row justify-content-center mt-md-4 mt-2 mx-0 text-start">
+              {card_data.map((item, index) => (
+                <motion.div
+                  key={index}
+                  className="col-lg-4 col-md-6 col-12 m-0 my-md-4 my-2"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4, duration: 1 }}
+                >
+                  <div className="col-12 p-0 ">
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        title={item.heading}
+                        width="100%"
+                        height="200"
+                        src={item.embeddedVideoUrl}
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                      ></iframe>
                     </div>
-                  </motion.div>
-                );
-              })}
+                    <h3 className="pt-lg-4 pt-4 Mazzard fs-3">
+                      {item.heading}
+                    </h3>
+                    <p className="pt-0 jakarta">{item.text}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>

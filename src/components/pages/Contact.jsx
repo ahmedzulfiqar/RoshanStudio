@@ -2,21 +2,47 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import HomeSection10 from "../../components2/home/HomeSection10";
 import emailjs from "emailjs-com";
+import HomeSection9 from "../../components2/home/HomeSection9";
+
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false); // State for managing the success alert
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setPhoneNumber("");
-    setMessage("");
+    const templateParams = {
+      from_name: `${firstName} ${lastName}`,
+      to_name: "Roshan Studio",
+      email: email,
+      phone: phoneNumber,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        "service_h2bmwsg",
+        "template_fg8jmxz",
+        templateParams,
+        "U4_EjTapJSajwof6p"
+      )
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPhoneNumber("");
+        setMessage("");
+        setShowSuccessAlert(true); // Set state to show the success alert
+        setTimeout(() => setShowSuccessAlert(false), 3000); // Hide the success alert after 3 seconds
+      })
+      .catch((error) => {
+        console.error("Email send error:", error);
+      });
   };
 
   return (
@@ -69,6 +95,7 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
+      <HomeSection9 />
       <motion.div
         class="container px-md-0 px-3 ps-lg-0 ps-2 my-5 justify-content-between"
         id="lol"
@@ -137,7 +164,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="col-md-8 px-4"
           >
-            <form action="">
+            <form onSubmit={handleSubmit}>
               <div className="row ">
                 <div className="col-md-6">
                   <input
@@ -239,7 +266,19 @@ const Contact = () => {
                 className="btn btn-lg fs-4 mt-lg-3 bg-main border-3 text-uppercase text-light fw-bold px-4  mt-md-5 mt-4 py-2 rounded-2"
               >
                 Send Email
-              </button>
+              </button>{" "}
+              {showSuccessAlert && (
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 1, duration: 1 }}
+                  viewport={{ once: true }}
+                  className="alert alert-success w-25 mt-3"
+                  role="alert"
+                >
+                  Email sent successfully!
+                </motion.div>
+              )}
             </form>
           </motion.div>
         </div>
