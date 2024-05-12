@@ -6,14 +6,22 @@ function Footer() {
     <>
       <footer class="text-center text-lg-start bg-main text-light  jakarta">
         <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom">
-          <div className="">
-            <a href="" class="me-4 text-reset">
+          <div class="">
+            <a
+              href="https://www.facebook.com/profile.php?id=61554420369299"
+              class="me-4 text-reset"
+              target="_blank"
+            >
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="" class="me-4 text-reset">
+            <a href="" class="me-4 text-reset" target="_blank">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="" class="me-4 text-reset">
+            <a
+              href="https://www.instagram.com/roshanstudio_101/"
+              class="me-4 text-reset"
+              target="_blank"
+            >
               <i class="fab fa-instagram"></i>
             </a>
           </div>

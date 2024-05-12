@@ -28,7 +28,7 @@ const HomeSection6 = () => {
                 </p>{" "}
                 <div className="d-flex pb-3">
                   <img
-                    src="https://marksoln.in/assets/img/icon/about_icon01.png"
+                    src="https://cdn-icons-png.flaticon.com/512/5288/5288411.png"
                     alt=""
                     className="img-fluid "
                     style={{ width: "70px", height: "70px" }}
@@ -45,7 +45,7 @@ const HomeSection6 = () => {
                 </div>
                 <div className="d-flex pb-3">
                   <img
-                    src="https://marksoln.in/assets/img/icon/about_icon02.png"
+                    src="https://i.pinimg.com/originals/88/85/de/8885de3758607c3f87f26a8b5105eb76.png"
                     alt=""
                     className="img-fluid "
                     style={{ width: "70px", height: "70px" }}
@@ -62,7 +62,7 @@ const HomeSection6 = () => {
                 </div>
                 <div className="d-flex pb-3">
                   <img
-                    src="https://marksoln.in/assets/img/icon/about_icon03.png"
+                    src="https://cdn0.iconfinder.com/data/icons/project-management-2-12/65/108-1024.png"
                     alt=""
                     className="img-fluid "
                     style={{ width: "70px", height: "70px" }}

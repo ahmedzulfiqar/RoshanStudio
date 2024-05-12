@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import HomeSection10 from "../../components2/home/HomeSection10";
+
 
 const Services = () => {
   const card_data = [
@@ -162,6 +164,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+            <HomeSection10/>
     </>
   );
 };

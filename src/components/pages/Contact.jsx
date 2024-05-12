@@ -110,7 +110,7 @@ const Contact = () => {
           >
             <h5 className="fs-5 Mazzard text-secondary">Hit The Digits</h5>
             <h1 className="display-4 anton texts text-uppercase">
-              +1234567890
+              <a href="tel:+923136824801">+923136824801</a>
             </h1>
           </motion.div>
           <motion.div
@@ -121,9 +121,12 @@ const Contact = () => {
             className="col-md-6 my-md-3 d-md-block d-none"
           >
             <h5 className="fs-5 Mazzard text-secondary ">Drop us a line</h5>
-            <h1 className="display-4 Mazzard texts text-uppercase">
-              RoshanStudion@gmail.com
-            </h1>
+            <a href="mailto:RoshanStudion@gmail.com">
+              {" "}
+              <h1 className="display-4 Mazzard texts text-uppercase">
+                RoshanStudion@gmail.com
+              </h1>{" "}
+            </a>
           </motion.div>
         </motion.div>
         <motion.div

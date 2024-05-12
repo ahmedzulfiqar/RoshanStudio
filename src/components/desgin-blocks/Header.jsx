@@ -176,25 +176,42 @@ function Header() {
               <Link to={"/contact"}>Contact Us</Link>
             </div>
           </div>
-          <div className="d-block position-absolute text-center items  bottom-0  ">
+          <div className="d-block position-absolute text-center items bottom-0">
             <div className="fs-1 text-dark text-uppercase pb-2">Socials</div>
             <div className="d-flex pt-3 justify-content-start pb-2">
-              <i
-                class="fa-brands text-main fs-3 fa-linkedin-in px-3"
-                aria-hidden="true"
-              ></i>
-              <i
-                class="fa-brands text-main fs-3 fa-instagram px-3"
-                aria-hidden="true"
-              ></i>
-              <i
-                class="fa-brands text-main fs-3 fa-facebook px-3"
-                aria-hidden="true"
-              ></i>
-              <i
-                class="fa-brands text-main fs-3 fa-twitter px-3"
-                aria-hidden="true"
-              ></i>
+              <a
+                href="https://www.linkedin.com/company/roshan-studio101/"
+                target="_blank"
+              >
+                <i
+                  className="fa-brands text-main fs-3 fa-linkedin-in px-3"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a
+                href="https://www.instagram.com/roshanstudio_101/"
+                target="_blank"
+              >
+                <i
+                  className="fa-brands text-main fs-3 fa-instagram px-3"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61554420369299"
+                target="_blank"
+              >
+                <i
+                  className="fa-brands text-main fs-3 fa-facebook px-3"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a href="" target="_blank">
+                <i
+                  className="fa-brands text-main fs-3 fa-twitter px-3"
+                  aria-hidden="true"
+                ></i>
+              </a>
             </div>
           </div>
         </motion.div>
