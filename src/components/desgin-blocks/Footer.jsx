@@ -84,13 +84,13 @@ function Footer() {
                 </p>
                 <p>
                   <i class="fas fa-envelope me-3"></i>
-                  info@example.com
+                  ROSHANSTUDION@GMAIL.COM
                 </p>
                 <p>
-                  <i class="fas fa-phone me-3"></i>123456789
+                  <i class="fas fa-phone me-3"></i>+92 313 6824801
                 </p>
                 <p>
-                  <i class="fas fa-print me-3"></i>123456789
+                  <i class="fas fa-print me-3"></i>+92 313 6824801
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ function Footer() {
           class="text-center p-4"
           style={{ backgroundcolor: "rgba(0, 0, 0, 0.05)" }}
         >
-          © 2024 Copyright
+          © 2024 Copyright - <a href="https://wdp-123.netlify.app/">WDP Developers</a>
         </div>
       </footer>
     </>
